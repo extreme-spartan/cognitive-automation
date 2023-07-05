@@ -1,0 +1,189 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>    
+                
+<canvas id="myChart" style="width:100%;max-width:700px;text-decoration-color:white;"></canvas>
+
+<script>
+var data1 = [121, 19, 3, 5, 2, 3, 20]
+var data2 = [12, 19, 13, 15, 12, 13, 30]
+var data3 = [21, 91, 131, 151, 121, 131, 40]
+var label1 = ['New','Resolves','Closed']
+var ctx = document.getElementById("myChart").getContext('2d');
+
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Windows", "Linux", "Storage", "Backup", "Security", "Network", "CPS"],
+        datasets: [
+        {
+            label: 'New',
+            data: data1,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.95)',
+                'rgba(255, 99, 132, 0.95)',
+                'rgba(255, 99, 132, 0.95)',
+                'rgba(255, 99, 132, 0.95)',
+                'rgba(255, 99, 132, 0.95)',
+                'rgba(255, 99, 132, 0.95)',
+                'rgba(255, 99, 132, 0.95)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        },
+        {
+            label: 'Resolved',
+            data: data2,
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.95)',
+                'rgba(54, 162, 235, 0.95)',
+                'rgba(54, 162, 235, 0.95)',
+                'rgba(54, 162, 235, 0.95)',
+                'rgba(54, 162, 235, 0.95)',
+                'rgba(54, 162, 235, 0.95)',
+                'rgba(54, 162, 235, 0.95)'
+
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        },
+        {
+            label: 'Closed',
+            data: data3,
+            backgroundColor: [
+                'rgba(255, 206, 86, 0.95)',
+                'rgba(255, 206, 86, 0.95)',
+                'rgba(255, 206, 86, 0.95)',
+                'rgba(255, 206, 86, 0.95)',
+                'rgba(255, 206, 86, 0.95)',
+                'rgba(255, 206, 86, 0.95)',
+                'rgba(255, 206, 86, 0.95)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        },
+        {
+            label: 'On Hold',
+            data: data3,
+            backgroundColor: [
+                'rgba(255, 206, 86, 0.95)',
+                'rgba(255, 206, 86, 0.95)',
+                'rgba(255, 206, 86, 0.95)',
+                'rgba(255, 206, 86, 0.95)',
+                'rgba(255, 206, 86, 0.95)',
+                'rgba(255, 206, 86, 0.95)',
+                'rgba(255, 206, 86, 0.95)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }
+    ]
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                stacked: false,
+                gridLines: {
+                    display: false,
+                    color: '#FFF',
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Squads',
+                    fontColor: '#FFF',
+                    fontSize: 20
+                },
+                ticks: {
+                    fontColor: "white",
+                    fontSize: 14
+                }   
+            }],
+            yAxes: [{
+                stacked: false,
+                gridLines: {
+                    display: true,
+                    color: '#FFF'
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Incident Count',
+                    fontColor: '#FFF',
+                    fontSize: 20
+                },
+                ticks: {
+                    fontColor: "white",
+                    fontSize: 14
+                } 
+            }]
+        },
+        onClick:function(e){
+            var activePoints = myChart.getElementsAtEvent(e);
+            var selectedIndex = activePoints[0]._index;
+            var cnt = 0;
+            countProperties(activePoints);
+            function countProperties(obj) {
+                 cnt = Object.keys(obj).length;
+                 alert(cnt);
+                 return cnt;
+            }
+
+            var bc = this.data.labels[selectedIndex];
+            
+            
+            var pc0 = this.data.datasets[0].label;
+            var pc1 = this.data.datasets[1].label;
+            var pc2 = this.data.datasets[2].label;
+
+            var ic0 = this.data.datasets[0].data[selectedIndex]
+            var ic1 = this.data.datasets[1].data[selectedIndex]
+            var ic2 = this.data.datasets[2].data[selectedIndex]
+
+            alert('Squad: '+bc+' | Category: '+pc0+' | Count: '+ic0);
+            alert('Squad: '+bc+' | Category: '+pc1+' | Count: '+ic1);
+            alert('Squad: '+bc+' | Category: '+pc2+' | Count: '+ic2);
+            
+
+        },
+        legend: {
+                labels: {
+                    fontColor: "white",
+                    fontSize: 14
+                },
+                display: true
+            },
+        title: {
+            display: true,
+            text: "Daily Incident Report",
+            fontColor: '#FFF',
+            fontSize: 20,
+            borderColor: '#000011'
+        },
+    }
+});
+</script>

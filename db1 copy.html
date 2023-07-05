@@ -1,0 +1,52 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>    
+                
+<canvas id="myChart" style="width:100%;max-width:550px;text-decoration-color:white;"></canvas>
+
+<script>
+var chartData = {
+    type: 'horizontalBar',
+    data: {
+       labels: ['A0224', 'A3681', 'A3984', 'A4101', 'A4150', 'B0682', 'Others'],
+       datasets: [{
+          label: "P1",
+          backgroundColor: '#cc3399',
+          data: [6, 7, 6, 8, 6, 10, 3]
+       }, {
+          label: "P2",
+          backgroundColor: '#0099ff',
+          data: [8, 9, 5, 8, 6, 10, 3]
+       }, {
+          label: "P3",
+          backgroundColor: '#0022ff',
+          data: [6, 7, 6, 8, 6, 10, 3]
+       }]
+    },
+    options: {
+       responsive: false,
+       legend: {
+          display: false
+       },
+       scales: {
+          yAxes: [{
+             stacked: true
+          }],
+          xAxes: [{
+             stacked: true
+          }]
+       },
+ 
+    }
+ }
+ 
+ var canvas = document.getElementById('myChart');
+ var myChart = new Chart(canvas, chartData);
+ 
+ canvas.onclick = function(evt) {
+    var activePoint = myChart.getElementAtEvent(evt)[0];
+    var data = activePoint._chart.data;
+    var datasetIndex = activePoint._datasetIndex;
+    var label = data.datasets[datasetIndex].label;
+    var value = data.datasets[datasetIndex].data[activePoint._index];
+    alert(label+'='+value);
+ };
+</script>

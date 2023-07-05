@@ -1,0 +1,47 @@
+<div class="w3-content w3-display-container">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)"> &#10094; Back-</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">-Next &#10095;</button>
+    <img class="mySlides" src="./assets/images/illustration.png" style="height:400px">
+    <img class="mySlides" src="http://localhost:4000/sp2.jpg" style="width:90%">
+    <img class="mySlides" src="http://localhost:4000/sp3.jpg" style="width:90%">
+    <img class="mySlides" src="http://localhost:4000/sp4.jpg" style="width:90%">
+    
+</div>
+  <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}  
+
+var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+        carousel(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+      setTimeout(plusDivs(1), 2000);
+    }
+ 
+</script>          
+
+</div>
