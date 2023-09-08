@@ -1,0 +1,128 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>    
+                
+<canvas id="myChart" style="height:490px;width:90%;text-decoration-color:white;"></canvas>
+
+<script>
+var data1 = [121, 19, 3, 5, 2, 3, 20]
+var data2 = [12, 19, 13, 15, 12, 13, 30]
+var data3 = [21, 91, 131, 151, 121, 131, 40]
+var data4 = [12, 19, 13, 15, 12, 13, 30]
+
+var chartData = {
+    type: 'bar',
+    data: {
+        labels: ["Apps", "Platform", "Storage", "Backup", "Security", "Network", "Database"],
+       datasets: [{
+          label: "P1",
+          backgroundColor: 'rgba(255, 99, 132, 0.95)',
+          data: data1
+       }, {
+          label: "P2",
+          backgroundColor: 'rgba(54, 162, 235, 0.95)',
+          data: data2
+       }, {
+          label: "P3",
+          backgroundColor: 'rgba(255, 206, 86, 0.95)',
+          data: data3
+       }, {
+          label: "P4",
+          backgroundColor: 'rgba(255, 106, 86, 0.95)',
+          data: data4
+       }]
+    },
+    options: {
+       responsive: false,
+       legend: {
+          display: false
+       },
+       scales: {
+          yAxes: [{
+             stacked: false,
+                gridLines: {
+                    display: true,
+                    color: 'blue'
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Event Count',
+                    fontColor: 'blue',
+                    fontSize: 14    
+                },
+                ticks: {
+                    fontColor: "blue",
+                    fontSize: 14
+                } 
+          }],
+          xAxes: [{
+             stacked: false,
+                gridLines: {
+                    display: false,
+                    color: 'grey',
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Cloud Infrastructure',
+                    fontColor: 'blue',
+                    fontSize: 20
+                },
+                ticks: {
+                    fontColor: "blue",
+                    fontSize: 14
+                } 
+          }]
+       },
+    "animation": {
+      "duration": 0.1,
+      "onComplete": function() {
+        var chartInstance = this.chart,
+        ctx = chartInstance.ctx;
+
+        //ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+        ctx.fontSize = 2;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'center';
+        ctx.fontColor = 'white';
+
+        this.data.datasets.forEach(function(dataset, i) {
+          var meta = chartInstance.controller.getDatasetMeta(i);
+          meta.data.forEach(function(bar, index) {
+            var data = dataset.data[index];
+            ctx.fillText(data, bar._model.x, bar._model.y - 5);
+          });
+        });
+      }
+    },
+        legend: {
+                labels: {
+                    fontColor: "black",
+                    fontSize: 10
+                },
+                display: true
+            },
+        title: {
+            display: true,
+            text: "Live Events Categorization",
+            fontColor: 'black',
+            fontSize: 14,
+            borderColor: '#000011'
+        }
+ 
+    }
+ }
+ 
+ var canvas = document.getElementById('myChart');
+ var myChart = new Chart(canvas, chartData);
+ 
+ canvas.onclick = function(evt) {
+    var activePoint = myChart.getElementAtEvent(evt)[0];
+    var selectedIndex = activePoint._index;
+
+    var data = activePoint._chart.data;
+    var datasetIndex = activePoint._datasetIndex;
+    var squad = data.labels[selectedIndex];
+    var label = data.datasets[datasetIndex].label;
+    var value = data.datasets[datasetIndex].data[activePoint._index];
+    alert(squad+' - '+label+'='+value);
+    //document.location.href="./db"+datasetIndex+".html"
+ };
+</script>

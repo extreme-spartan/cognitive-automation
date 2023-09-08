@@ -1,0 +1,75 @@
+         
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>    
+                
+<canvas id="myChart" style="width:100%;max-width:550px;text-decoration-color:white;"></canvas>
+
+<script>
+Chart.defaults.color = '#001';    
+var xValues = ["P1", "P2", "P3", "P4", "P5"];
+var yValues = [120, 50, 14, 54, 345];
+var barColors = ["red", "green","blue","orange","cyan"];
+          
+new Chart("myChart", {
+type: "line",
+data: {
+    labels: xValues,
+    datasets: [{
+    backgroundColor: barColors,
+    data: yValues,
+    color:"#666"
+    }]
+},
+options: {
+        scales: {
+            xAxes: [{
+                stacked: true,
+                gridLines: {
+                    display: false,
+                    color: '#FFF',
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Squads',
+                    fontColor: '#FFF',
+                    fontSize: 20
+                },
+                ticks: {
+                    fontColor: "white",
+                    fontSize: 14
+                }   
+            }],
+            yAxes: [{
+                stacked: true,
+                gridLines: {
+                    display: true,
+                    color: '#FFF'
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Incident Count',
+                    fontColor: '#FFF',
+                    fontSize: 20
+                },
+                ticks: {
+                    fontColor: "white",
+                    fontSize: 14
+                } 
+            }]
+        },
+        legend: {
+                labels: {
+                    fontColor: "white",
+                    fontSize: 14
+                },
+                display: true
+            },
+        title: {
+            display: true,
+            text: "Daily SoD Report",
+            fontColor: '#FFF',
+            fontSize: 20,
+            borderColor: '#000011'
+        },
+    }
+});
+</script>

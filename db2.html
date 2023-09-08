@@ -1,0 +1,95 @@
+         
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>    
+                
+<canvas id="myChart" style="width:100%;max-width:550px;text-decoration-color:white;"></canvas>
+
+<script>
+var data1 = [12, 19, 3, 5, 2, 3];
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      datasets: [{
+          label: '# of Votes',
+          data: data1,
+          backgroundColor: [
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)',
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(153, 102, 255, 0.2)',
+              'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+              'rgba(255,99,132,1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+      }]
+  },
+  options: {
+      scales: {
+            xAxes: [{
+                stacked: false,
+                gridLines: {
+                    display: false,
+                    color: '#FFF',
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Squads',
+                    fontColor: '#FFF',
+                    fontSize: 20
+                },
+                ticks: {
+                    fontColor: "white",
+                    fontSize: 14
+                }   
+            }],
+            yAxes: [{
+                stacked: false,
+                gridLines: {
+                    display: true,
+                    color: '#FFF'
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Incident Count',
+                    fontColor: '#FFF',
+                    fontSize: 20
+                },
+                ticks: {
+                    fontColor: "white",
+                    fontSize: 14
+                } 
+            }]
+        },
+        onClick:function(e){
+            var activePoints = myChart.getElementsAtEvent(e);
+            var selectedIndex = activePoints[0]._index;
+            alert(this.data.labels[selectedIndex]);
+        },
+        legend: {
+                labels: {
+                    fontColor: "white",
+                    fontSize: 14
+                },
+                display: true
+            },
+        title: {
+            display: true,
+            text: "Daily Incident Report",
+            fontColor: '#FFF',
+            fontSize: 20,
+            borderColor: '#000011'
+        }
+  }
+});
+</script>
+
+

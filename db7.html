@@ -1,0 +1,46 @@
+<div class="w3-content w3-display-container">
+  <iframe src="./db0.html" name="view_g1" style="height:500px;width:90%;border:none;text-decoration-color: aqua;" title="Enterprise Dashboards & Reports"></iframe>
+  <div>
+    <p style="height: 5px;">
+      <a class="mySlides" href="./db1.html" target="view_g1" style="background-color: #4CAF50; border: none;border-radius: 5px;color: white;padding: 5px 15px;text-align: center;text-decoration: none;display: inline-block;cursor: pointer" onclick="plusDivs(1)">Click here to View P1/P2 Incidents vs Squads</a>
+      <a class="mySlides" href="./db2.html" target="view_g1" style="background-color: #4CAF50; border: none;border-radius: 5px;color: white;padding: 5px 15px;text-align: center;text-decoration: none;display: inline-block;cursor: pointer" onclick="plusDivs(1)">Click here to View Report 2</a>
+      <a class="mySlides" href="./db3.html" target="view_g1" style="background-color: #4CAF50; border: none;border-radius: 5px;color: white;padding: 5px 15px;text-align: center;text-decoration: none;display: inline-block;cursor: pointer" onclick="plusDivs(1)">Click here to View Report 3</a>
+      <a class="mySlides" href="./db4.html" target="view_g1" style="background-color: #4CAF50; border: none;border-radius: 5px;color: white;padding: 5px 15px;text-align: center;text-decoration: none;display: inline-block;cursor: pointer" onclick="plusDivs(1)">Click here to View Report 4</a>
+      <a class="mySlides" href="./db5.html" target="view_g1" style="background-color: #4CAF50; border: none;border-radius: 5px;color: white;padding: 5px 15px;text-align: center;text-decoration: none;display: inline-block;cursor: pointer" onclick="plusDivs(1)">Click here to View Report 5</a>
+      <a class="mySlides" href="./db6.html" target="view_g1" style="background-color: #4CAF50; border: none;border-radius: 5px;color: white;padding: 5px 15px;text-align: center;text-decoration: none;display: inline-block;cursor: pointer" onclick="plusDivs(1)">Click here to View Report 6</a>
+      <a class="mySlides" href="./db7.html" target="view_g1" style="background-color: #4CAF50; border: none;border-radius: 5px;color: white;padding: 5px 15px;text-align: center;text-decoration: none;display: inline-block;cursor: pointer" onclick="plusDivs(1)">Click here to View Report 7</a>
+    </p>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";
+      xx = slideIndex.toString()
+
+      //alert(xx)
+      
+      //document.getElementById("demo").onclick 
+      
+      //document.getElementsByClassName('mySlides').click();
+
+      //document.location.href  = "./db"+xx+".html";
+    }
+  </script>          
+</div>
+
