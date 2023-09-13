@@ -1,0 +1,13 @@
+{
+	"id": "storeoptions",
+	"name": "I'm Katha",
+	"description": "response to - Want to buy a dress",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/womenfootwear.jpg",
+	         "title": "Katha Logo",
+	         "description": "Welcome back to the store. Do you want to take a look at our new additions? We have great new shoes in your size that will go great with the jacket you purchased two weeks back."
+	    }
+	]
+}

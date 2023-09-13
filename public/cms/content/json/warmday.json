@@ -1,0 +1,13 @@
+{
+	"id": "warmday",
+	"name": "I'm Katha",
+	"description": "response to - What can I wear -> Morning",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/warmdaymorning.png",
+	         "title": "Katha Logo",
+	         "description": "Today is office day and weather will be warm. As per fashion trending today, how about your black-and-white chequered shirt, white tights and a short boot?"
+	    }
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"id": "howareyou",
+	"name": "I'm Katha",
+	"description": "response to a hello.",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/Katha-girl2.png",
+	         "title": "Katha Logo",
+	         "description": "Hello! I'm doing good. I'm here to help you..just say the word"
+	    }
+	]
+}

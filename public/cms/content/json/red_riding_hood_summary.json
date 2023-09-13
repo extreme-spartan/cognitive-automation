@@ -1,0 +1,61 @@
+{
+	"id": "red_riding_hood_summary",
+	"name": "Little Red Riding Hood - Short",
+	"description": "This is a story about a little girl who wandered into a forest on way to her grandma's home, and was devoured by a wolf.",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_Front.jpg",
+	         "title": "Red Riding Hood",
+	         "description": "This is a story of little Red Riding Hood, who lived in a cottage next to a forest."
+	    },
+	    {
+	         "thumbnail": "",
+	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_1.jpg",
+	         "title": "Red Riding Hood 1/8",
+	         "description": "Little Red Riding Hood wanted to go to her grandma's home. Her mom gave her permission and also packed a food basket for her."
+	    },
+	    {
+	         "thumbnail": "",
+	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_2.jpg",
+	         "title": "Red Riding Hood 2/8",
+	         "description": "On the way, Red Riding Hood saw some beautiful flowers and wanted to take some for her grandma. That's when a wolf spotted her."
+	    },
+	    {
+	         "thumbnail": "",
+	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_3.jpg",
+	         "title": "Red Riding Hood 3/8",
+	         "description": "The wolf wanted to devour her. So he pretended to be a friend and talked to Red Riding Hood to find out more about her."
+	    },
+	    {
+	         "thumbnail": "",
+	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_4.jpg",
+	         "title": "Red Riding Hood 4/8",
+	         "description": "The wolf now knew where Red Riding Hood is going. He went to grandma's home quickly. When grandma opened the door, the wolf devoured her."
+	    },
+	    {
+	         "thumbnail": "",
+	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_5.jpg",
+	         "title": "Red Riding Hood 5/8",
+	         "description": "The wolf now laid in the bed pretending to be grandma. When Red Riding Hood came to the house, she asked, Why do you have such large teeth?"
+	    },
+	    {
+	         "thumbnail": "",
+	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_6.jpg",
+	         "title": "Red Riding Hood 6/8",
+	         "description": "The wolf said, because I want to eat you. Then he fell upon Red Riding Hood. She screamed but the wolf devoured her in one gulp."
+	    },
+	    {
+	         "thumbnail": "",
+	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_7.jpg",
+	         "title": "Red Riding Hood 7/8",
+	         "description": "Hearing the scream, a huntsman came to the house. He cut open the wolf's belly, and saw Red Riding Hood and grandma inside."
+	    },
+	    {
+	         "thumbnail": "",
+	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_8.jpg",
+	         "title": "Red Riding Hood 8/8",
+	         "description": "Rescued by the huntsman, Red Riding Hood and her grandma now enjoyed their time and had good fun together."
+	    }
+	]
+}

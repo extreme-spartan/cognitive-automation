@@ -1,0 +1,13 @@
+{
+	"id": "dalmatian_cartoon",
+	"name": "I'm Katha",
+	"description": "response to - That is a Dalmatian",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/dalmatian.png",
+	         "title": "Katha Logo",
+	         "description": "It's a Dalmatian. Do you want to see a short cartoon about Dalmatian?"
+	    }
+	]
+}

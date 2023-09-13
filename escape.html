@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ExtremeSpartan - Cognitive Automation</title>
+    <!-- Latest compiled and minified CSS -->
+  <link href="./scripts/widget-5d9a4e95309cd5de5d5b-prod.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script> -->
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+  <script src="./public/libraries/p5.js" type="text/javascript"></script>
+  <!-- <script src="libraries/p5.dom.js" type="text/javascript"></script> -->
+  <!-- <script src="libraries/p5.sound.js" type="text/javascript"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js" integrity="sha512-bcfltY+lNLlNxz38yBBm/HLaUB1gTV6I0e+fahbF9pS6roIdzUytozWdnFV8ZnM6cSAG5EbmO0ag0a/fLZSG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+  <script src="./public/sketch.js" type="text/javascript"></script>
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js" type="text/javascript"></script> 
+   <script>
+    // var announcementText = "Hello Welcome to the World of Cognitive Computing!!";
+    // var utterance = new SpeechSynthesisUtterance(announcementText);
+    // utterance.lang = 'en-US';
+    // utterance.rate = 1.0;
+    // utterance.volume = 1.0;
+    // utterance.pitch = 1.0;
+    // speechSynthesis.speak(utterance); 
+    // var uname = "";
+    $(document).ready(function () {
+      $(".hideOnStartup").hide();
+      $.getJSON("/protected", function (data) {
+        // Already authenticated
+        $("#WhenAuthenticated").show();
+        $("#logoutButton").show();
+        $("#name").text(data.name);
+        $("#email").text(data.email);
+      }).fail(function () {
+        // Not authenticated yet
+        $("#WhenNotAuthenticated").show();
+        $("#loginButton").show();
+      }).always(function() {
+                var languageQuery = window.location.href.slice(window.location.href.indexOf('?'));
+                var changeDetails = document.getElementById('changeDetails');
+                changeDetails.href = "/ibm/cloud/appid/cloudLand/view/change/details" + languageQuery;
+                var changePassword = document.getElementById('changePassword');
+                changePassword.href = "/ibm/cloud/appid/cloudLand/view/change/password" + languageQuery;
+
+                var signUp = document.getElementById('signUp');
+                changePassword.href = "/ibm/cloud/appid/view/sign_up" + languageQuery;
+
+
+              });
+    });
+
+    var wakeWord = false;
+    var wCnt = 0;
+    // var Shp;
+  </script>
+    
+  <style>
+
+    * {
+      font-family: Verdana, Arial, sans-serif;
+    }
+    a:link {
+      color:#000;
+      text-decoration: none;
+    }
+    a:visited {
+      color:#000;
+    }
+    a:hover {
+      color:#33F;
+    }
+    .button {
+      background: -webkit-linear-gradient(top,#008dfd 0,#0370ea 100%);
+      border: 1px solid #076bd2;
+      border-radius: 3px;
+      color: #fff;
+      display: none;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.3;
+      padding: 4px 8px;
+      text-align: center;
+      text-shadow: 1px 1px 1px #076bd2;
+      letter-spacing: normal;
+    }
+    .center {
+      padding: 10px;
+      text-align: center;
+    }
+    .final {
+      color: black;
+      padding-right: 3px; 
+    }
+    .interim {
+      color: gray;
+    }
+    .info {
+      font-size: 12px;
+      text-align: center;
+      color: #777;
+      display: none; 
+    }
+    .right {
+      float: right;
+      position:relative;
+      top:0%;
+      right:0%;
+    } 
+    .sidebyside {
+      display: inline-block;
+      width: 45%;
+      min-height: 40px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+    #headline {
+      font-size: 40px;
+      font-weight: 300;
+    }
+    #info {
+      font-size: 14px;
+      text-align: left;
+      color: #777;
+      visibility: hidden;
+    }
+    #info_pos {
+      position:relative;
+      padding-top: 3px;
+    }
+    #results {
+      font-size: 12px;
+      font-weight: bold;
+      border: 1px solid #ddd;
+      padding: 5px;
+      text-align: left;
+      min-height: 50px;
+    }
+
+    #history_areaa {
+      font-size: 12px;
+      border: 0px solid #ddd;
+      padding-top: 0px;
+      text-align: left;
+      vertical-align: bottom;
+      overflow: visible;
+      max-width: 100%;
+      min-height: 40%;
+      max-height: 40%;
+    }
+    #text_areaa {
+      font-size: 14px;
+      font-weight: bold;
+      border: 0px solid #ddd;
+      padding: 1px;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      display: inline;
+    }
+    #chatInput {
+      font-size: 14px;
+      border: 1px solid #ddd;
+      padding: 2px;
+      text-align: left;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      display: inline;
+    }
+    
+    #imageURLId{
+    font-size: 14px;
+    font-weight: normal;
+    resize: none;
+    overflow-y: scroll;
+    }
+    #start_button {
+      border: 0;
+      background-color:transparent;
+      padding: 0;
+    }
+    #sends_button {
+      border: 0;
+      background-color:transparent;
+      padding: 0;
+    }
+    #div_language {
+      visibility:visible;
+    }
+
+    h2 { 
+    position: absolute; 
+    top: 200px; 
+    left: 0; 
+    width: 100%; 
+    }
+    div.img {
+      border: 10px solid #ccc;
+      float: center;
+      max-width: 400px;
+      max-height: 250px;
+    }
+    div.ex2 {
+      max-width: 100%;
+      margin: auto;
+      border: 3px solid #73AD21;
+    }
+    div.img:hover {
+      border: 1px solid #777;
+    }
+
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    #vdo, .avcontrol {
+      max-width:100%;
+      border: 0px solid #ccc;
+      float: center;
+    }
+    #vdo {
+      display: none;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      border: 0px solid #def;
+    }
+    .responsive {
+      width: 100%;
+      height: auto;
+    }
+    #panel, .flip {
+      font-size: 12px;
+      padding: 4px;
+      text-align: left;
+      background-color: transparent;
+      border: solid 1px #def;
+    }
+
+    #panel {
+      display: block;
+    }
+
+    #mydiv {
+      position: absolute;
+      z-index: 9;
+      background-color: #f1f1f1;
+      text-align: center;
+      border: 1px solid #d3d3d3;
+    }
+
+    #mydivheader {
+      padding: 5px;
+      cursor: move;
+      z-index: 10;
+      background-color: #2196F3;
+      color: #fff;
+    }
+
+
+    .sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-right: 10px;
+    }
+
+    .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    }
+
+    .sidenav a:hover {
+    color: #f1f1f1;
+    }
+
+    .main {
+    margin-right: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    }
+
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+    .accordion {
+    background-color: #eee;
+    color: blue;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    text-decoration:underline;
+    outline:solid;
+    outline-width: 1px;
+    outline-color: rgb(222, 18, 18);
+    font-size: 15px;
+    transition: 0.4s;
+    }
+
+    .active, .accordion:hover {
+    background-color: #ccc; 
+    }
+
+    .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    }
+    .collapsible {
+      background-color: #78f79e;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    .active, .collapsible:hover {
+      background-color: #bffc85;
+    }
+    .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+/* Checkbox hack to control information box display */
+
+label {
+    font-size: 12px;
+    position: relative;
+    top: 2px;
+    right: 3px;
+    z-index: 5;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  input[type=checkbox] {
+     position: absolute;
+     top: -100px;
+  }
+
+  aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: 0.3s all ease-out;
+    background-color: transparent;
+    padding: 1rem;
+  }
+
+  aside p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  aside a {
+    color: #f40707;
+  }
+
+  /* Toggled State of information box */
+  input[type=checkbox]:checked ~ aside {
+    transform: translateX(0);
+  }
+
+
+  .video-container {
+            position: relative;
+            display: inline-block;
+  }
+
+  .overlay {
+      position: absolute;
+      /* top: 0;  */
+      left: 0;
+      bottom: 0 ;
+      width: 100%;
+      height: 39%;
+      background-color: rgba(255, 255, 255, 1); /* Change the color and opacity as needed */
+      z-index: 1; /* Place the overlay above the video */
+  }
+        /* Slide-in pane styles */
+        .slide-pane {
+          position: fixed;
+          top: 0;
+          right: -400px;
+          width: 400px;
+          height: 100%;
+          background-color: white;
+          box-shadow: -3px 0 6px rgba(0, 0, 0, 0.3);
+          transition: right 0.3s ease-in-out;
+        }
+        
+        .pane-content {
+          padding: 10px;
+        }
+        
+        .close-slide {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+  </style>
+</head>
+<body>
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=zYY4ho3R"></script>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Extreme-Spartan</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a id="Home" href="#">Home</a></li>
+        <li class="dropdown hideOnStartup" id="WhenAuthenticated">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Accounts
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a id="changeDetails">Change details</a></li>
+            <li><a id="changePassword">Change password</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>  
+        </ul>             
+        <ul class="nav navbar-nav navbar-left ">
+          <li>
+            <a class="hideOnStartup" href="/ibm/cloud/appid/rop/login" id="loginButton"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+            <a class="hideOnStartup" href="/ibm/cloud/appid/logout" id="logoutButton"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+          </li>
+          <li><a href="/ibm/cloud/appid/view/sign_up"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav> 
+<script type="text/javascript">
+  var BASE_KATHA_URL = "";
+  var BASE_CMS_URL = "/public/cms";
+</script>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <div id="drift-widget-container" style="position: absolute; z-index: 2147483647;">
+        <div id="mydiv" style="border: none; display: block; height: 220px !important; width: 300px !important; position: fixed; top: auto; left: auto; top: 4%; right: 0px; visibility: visible; z-index: 2147483647; max-height: 100vh; max-width: 100vw; transition: none; background: none transparent; opacity: 1;">
+          <!-- <div class="sidenav"> -->
+
+              <div class="flex-center">
+                <div class="flex-column flex-1">
+                  <div id="WhenNotAuthenticated" class="hideOnStartup"><br><br> You're not authenticated :(</div>
+                  <!-- <div id="WhenNotAuthenticated" class="hideOnStartup"><br><br> Not Authenticated :( </div> -->
+                    <img id="usrImg" src="" class="responsive">
+                    <div class="video-container">
+                      <video id="usrVideo"  playsinline autoplay muted loop poster="https://cdn2.veltra.com/ptr/20180427105257_558150640_10498_0.jpg" style='display: none;'> <!-- ./public/images/thumbnail.jpeg-->
+                        <source id="mp4_src" src="" type="video/mp4">
+                              Your browser does not support HTML5 video.
+                      </video>
+                      <div class="overlay" style='display: none;'>
+                        <div id="history_area" class="responsive" style='display: none;'>
+                          <textarea readonly class="form-control" id="historyArea" style="color:#777;background-color:transparent;border:1px solid #ddd;font-size:12px;width:100%;height:115px;resize:none;overflow-y:scroll;">
+                          </textarea>                         
+                        </div>
+                      </div>
+                    </div>  
+                    <div class="_3NF-ok9QLIxL_8hJP-wqln flex-column">
+                      <div class="_3me6Qx7Oc-d8q01pJiZkW-">
+                        <span>
+                          <div class="flex-center dsg-Regular color-gray-dark _30acjYOY3KpZb6rcrQtycV">
+                            <div id="vdo" class="responsive" >
+                              <button id="btn_play" onclick="playVid()" >Play Video</button>
+                              <button id="btn_pause" onclick="pauseVid()" >Pause Video</button>
+                              <button id="btn_mute" onclick="enableMute()" >Mute Video</button>
+                              <button id="btn_sound" onclick="disableMute()" >Unmute Video</button>
+                            </div>                                
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <section id='appinfo' style='display: none;'>
+                      <div id='mobinp'>
+                        <input type="file" name="video" accept="video/*,image/*" >
+                      </div>
+                      <div id='dskinp'>
+                        <button id="capture" onclick="snapClick()">Capture</button>
+                        <video id="player" class="responsive" playsinline autoplay></video>
+                        <!-- <canvas id="snapshot" width=200 height=150 style="display:none;"></canvas> -->
+                      </div>
+                    </section>
+                                                                    
+                              <!-- <div id="history_area" class="responsive">
+                                <textarea readonly class="form-control" id="historyArea" style="color:#777;background-color:transparent;border:1px solid #ddd;font-size:12px;width:100%;height:115px;resize:none;overflow-y:scroll;">
+                                </textarea>
+                                                          
+                              </div> -->
+
+                    <!-- <div class="_29vw7TuPr8BvnPmQim9SyX"> -->
+                      <p id="charCount" style='display: none;'>0 characters</p>
+                      <input id="chatInput" type="text" class="form-control" placeholder="Type in text here .. " autofocus="autofocus" onkeyup="send_txt(id)" oninput="countCharacters()"/>
+                        <!-- <div class="_3NF-ok9QLIxL_8hJP-wqln flex-column"> -->
+                        <div class="_3me6Qx7Oc-d8q01pJiZkW-">
+                          <span>
+                            <div class="flex-center dsg-Regular color-gray-dark _30acjYOY3KpZb6rcrQtycV">
+                                <button style="color: blue" id="send_button" onclick="sendButton(event)">Send</button>
+                            </div>
+                          </span>
+                        </div>
+                        <!--   </div> -->
+                    <!-- </div>                               -->
+
+                </div> <!-- "flex-column flex-1" -->
+                          <!--<div class="TSuRK-6Q45wskduuptJBi" style="background-image: url(https://katha.mycloud.net/KathaCms/content/topic/Katha-girl2.png);"> -->
+              </div> 
+
+
+                <div id="panel">
+                  <div id="info">
+                    <p id="info_start">Click on the microphone icon and begin speaking.</p>
+                    <p id="info_speak_now">Speak now. When done, click on the microphone icon.</p>
+                    <p id="info_no_speech">No speech was detected. You may need to adjust your
+                      <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
+                        microphone settings</a>.</p>
+                    <p id="info_no_microphone" style="display:none">
+                      No microphone was found. Ensure that a microphone is installed and that
+                      <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
+                      microphone settings</a> are configured correctly.</p>
+                    <p id="info_allow">Click the "Allow" button above to enable your microphone.</p>
+                    <p id="info_denied">Permission to use microphone was denied.</p>
+                    <p id="info_blocked">Permission to use microphone is blocked. To change,
+                      go to chrome://settings/contentExceptions#media-stream</p>
+                    <p id="info_upgrade">Web Speech API is not supported by this browser.
+                        Upgrade to <a href="//www.google.com/chrome">Chrome</a>
+                        version 25 or later.</p>
+                  </div>
+                  <div class="right">
+                    <button id="start_button" onclick="startButton(event)">
+                      <img id="start_img" src="mic.gif" alt="Start">
+                    </button>
+                  </div>
+                  <div id="results">
+                    <span id="final_span" class="final"></span>
+                    <span id="interim_span" class="interim"></span>
+                  </div>
+                  <section id='chglang' style='display: none;'>
+                    <div class="center">
+                      <div id="div_language">
+                        <select id="select_language" onchange="updateCountry()"></select>&nbsp;&nbsp;<select id="select_dialect"></select>&nbsp;&nbsp;<input id="statusLine" type="text" disabled="disabled">
+                      </div>
+                    </div>
+                  </section>
+                </div>
+          <!-- </div> -->
+
+              </div> <!---"flex-center"-->
+
+        </div> <!-- mydiv -->
+        </div> <!-- drift-widget-container -->
+      </div>
+    </div> <!-- col-sm-3 -->
+    <div class="col-sm-9">
+      <section class="sound-clips">
+      
+      
+      </section>        
+            <!-- <div id="imgDiv">
+            <img class="center-block" id="logo" alt="logo"
+                style="height: 80%; width: 80%; object-fit: contain;margin-top: 40px" src="https://responsivevoice.org/wp-content/uploads/2020/01/parrot-flight.png">
+        </div> -->
+
+
+        <!-- <div id="WhenNotAuthenticated" class="hideOnStartup">
+            <h3>You're not authenticated :(</h3>
+        </div>
+
+        <div id="WhenAuthenticated" class="hideOnStartup">
+            <h3>You're authenticated :)</h3>
+            <h3>Hello <span id="name"></span></h3>
+            <h4>Your email is <span id="email"></span></h4>
+            <br/><br/>
+            <a class="btn btn-lg btn-primary btn-login" id="changeDetails">Change details</a>
+            <a class="btn btn-lg btn-primary btn-login" id="changePassword">Change password</a>
+            <a class="btn btn-primary" href="/spn">SPN</a>
+            <button class="btn btn-primary" style="color: blue" id="send_button" onclick="initiate()">Send</button>
+        </div> -->
+
+        <img id="waitImg" class="responsive">
+        
+        <div id="tcon"></div>
+        <!-- <label for="toggle"></label> -->
+        <input type="checkbox" id="toggle"> 
+        <aside id="asideLabel">
+          <img id="cmsImg" > 
+
+
+
+
+
+        </aside>          
+
+      
+
+      
+      
+      
+                  
+        
+        <!-- <video id="myVideo"  playsinline autoplay muted loop>
+            <source id="mp4_src" src="" type="video/mp4">
+                    Your browser does not support HTML5 video.
+        </video>      
+        <div id="vdo" class="responsive" >
+          <button id="btn_play" onclick="playVid()" >Play Video</button>
+          <button id="btn_pause" onclick="pauseVid()" >Pause Video</button>
+          <button id="btn_mute" onclick="enableMute()" >Mute Video</button>
+          <button id="btn_sound" onclick="disableMute()" >Unmute Video</button> 
+        </div>  -->
+        
+
+    </div>
+  </div>
+</div>
+<script src="./public/scripts/escape.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+	"id": "dalmatian",
+	"name": "I'm Katha",
+	"description": "response to - I want to study dogs",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/D4dalmatian.png",
+	         "title": "Katha Logo",
+	         "description": "I`ve a very interesting dog quiz for you. Just tell me what is this dog starting with D?"
+	    }
+	]
+}

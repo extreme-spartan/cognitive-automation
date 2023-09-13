@@ -1,0 +1,13 @@
+{
+	"id": "showjackets",
+	"name": "I'm Katha",
+	"description": "response to - Want to buy a jacket",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/showjackets.png",
+	         "title": "Katha Logo",
+	         "description": "I have a yellow, a red and a black jacket. None of them goes with your wardrobe."
+	    }
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"id": "wolf",
+	"name": "I'm Katha",
+	"description": "response to - What is a wolf",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/gray-wolves.jpg",
+	         "title": "Katha Logo",
+	         "description": "A wolf is an animal that lives in the forest. A wolf lives with a large family. It eats meat. Wolves are mainly grey in color."
+	    }
+	]
+}

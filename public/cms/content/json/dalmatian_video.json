@@ -1,0 +1,13 @@
+{
+	"id": "dalmatian_video",
+	"name": "I'm Katha",
+	"description": "response to - Yes, show video for Dalmatian",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/DalmatianRun.gif",
+	         "title": "Katha Logo",
+	         "description": "This is a story about a Dalmatian."
+	    }
+	]
+}

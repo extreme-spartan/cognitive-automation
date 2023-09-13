@@ -1,0 +1,13 @@
+{
+	"id": "newadditions",
+	"name": "I'm Katha",
+	"description": "response to - What new additions you have",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/newadditions.png",
+	         "title": "Katha Logo",
+	         "description": "I have new jackets, shoes, scarves and sunglasses."
+	    }
+	]
+}

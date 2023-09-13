@@ -1,0 +1,13 @@
+{
+	"id": "showbooks",
+	"name": "I'm Katha",
+	"description": "response to - Which books can you talk about",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/showbooks.png",
+	         "title": "Katha Logo",
+	         "description": "I have these books that I can talk about."
+	    }
+	]
+}

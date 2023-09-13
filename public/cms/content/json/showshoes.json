@@ -1,0 +1,13 @@
+{
+	"id": "showshoes",
+	"name": "I'm Katha",
+	"description": "response to - Want to buy a shoe",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/showshoes.png",
+	         "title": "Katha Logo",
+	         "description": "I have a short black boot, and suede leather high boot."
+	    }
+	]
+}

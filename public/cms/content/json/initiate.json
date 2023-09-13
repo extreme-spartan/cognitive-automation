@@ -1,0 +1,13 @@
+{
+	"id": "initiate",
+	"name": "I'm Katha",
+	"description": "Initial response to a user.",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/Katha-logo-mid.png",
+	         "title": "Katha Logo",
+	         "description": "Hi, I'm Katha. What would you like me to do?"
+	    }
+	]
+}

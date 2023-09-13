@@ -1,0 +1,13 @@
+{
+	"id": "rainyday",
+	"name": "I'm Katha",
+	"description": "response to - What can I wear -> Morning",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/anorak-trench-scarf.png",
+	         "title": "Katha Logo",
+	         "description": "It will be rainy today morning. As per fashion trending today, you may want to choose your anorak, worn over a classic trench. Would you like to add a bright scarf to the look?"
+	    }
+	]
+}

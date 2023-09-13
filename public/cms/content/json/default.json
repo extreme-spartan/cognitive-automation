@@ -1,0 +1,13 @@
+{
+	"id": "default",
+	"name": "The default JSON",
+	"description": "This is the default JSON file.",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/speakagain.png",
+	         "title": "Red Riding Hood",
+	         "description": "Can you tell it again please"
+	    }
+	]
+}

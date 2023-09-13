@@ -1,0 +1,13 @@
+{
+	"id": "showscarves",
+	"name": "I'm Katha",
+	"description": "response to - Want to buy a scarf",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/showscarves.png",
+	         "title": "Katha Logo",
+	         "description": "I have a red-and-yellow bright scarf and a beige woollen scarf."
+	    }
+	]
+}

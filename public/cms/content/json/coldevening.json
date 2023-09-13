@@ -1,0 +1,13 @@
+{
+	"id": "coldevening",
+	"name": "I'm Katha",
+	"description": "response to - What can I wear -> Morning",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/coldevening.png",
+	         "title": "Katha Logo",
+	         "description": "Weather will be cooler today evening. As per fashion trending today, you may want to wear the Beige Blazer, white T-shirt, black Pants. Would you like your Tan Leopard Suede Loafers to go with it?"
+	    }
+	]
+}

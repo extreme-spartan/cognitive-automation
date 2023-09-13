@@ -1,0 +1,13 @@
+{
+	"id": "video",
+	"name": "The Little Red Riding Hood - Long",
+	"description": "This is a story about a little girl who wandered into a forest on way to her grandma's home, and was devoured by a wolf.",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/LittleRedRidingHood_video.mp4",
+	         "title": "Red Riding Hood",
+	         "description": "Story of the little Red Riding Hood"
+	    }
+	]
+}

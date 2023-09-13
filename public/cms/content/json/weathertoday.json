@@ -1,0 +1,13 @@
+{
+	"id": "weathertoday",
+	"name": "I'm Katha",
+	"description": "response to - What can I wear",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/morning-evening.png",
+	         "title": "Katha Logo",
+	         "description": "When do you want to go out? Morning or evening?"
+	    }
+	]
+}

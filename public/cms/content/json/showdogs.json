@@ -1,0 +1,13 @@
+{
+	"id": "showdogs",
+	"name": "I'm Katha",
+	"description": "response to - I want to study ",
+	"images": [
+	    {
+	         "thumbnail": "",
+	         "uri": "content/topic/showdogs.png",
+	         "title": "Katha Logo",
+	         "description": "Do you want to study animals? I can talk about dogs."
+	    }
+	]
+}
