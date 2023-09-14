@@ -16,19 +16,10 @@
   <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 
   <script src="./public/libraries/p5.js" type="text/javascript"></script>
-  <!-- <script src="libraries/p5.dom.js" type="text/javascript"></script> -->
-  <!-- <script src="libraries/p5.sound.js" type="text/javascript"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js" integrity="sha512-bcfltY+lNLlNxz38yBBm/HLaUB1gTV6I0e+fahbF9pS6roIdzUytozWdnFV8ZnM6cSAG5EbmO0ag0a/fLZSG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
   <script src="./public/sketch.js" type="text/javascript"></script>
   <script src="https://cdn.socket.io/socket.io-1.4.5.js" type="text/javascript"></script> 
    <script>
-    // var announcementText = "Hello Welcome to the World of Cognitive Computing!!";
-    // var utterance = new SpeechSynthesisUtterance(announcementText);
-    // utterance.lang = 'en-US';
-    // utterance.rate = 1.0;
-    // utterance.volume = 1.0;
-    // utterance.pitch = 1.0;
-    // speechSynthesis.speak(utterance); 
     // var uname = "";
     $(document).ready(function () {
       $(".hideOnStartup").hide();
@@ -45,12 +36,12 @@
       }).always(function() {
                 var languageQuery = window.location.href.slice(window.location.href.indexOf('?'));
                 var changeDetails = document.getElementById('changeDetails');
-                changeDetails.href = "/ibm/cloud/appid/cloudLand/view/change/details" + languageQuery;
+                changeDetails.href = "http://localhost:1234/ibm/cloud/appid/cloudLand/view/change/details" + languageQuery;
                 var changePassword = document.getElementById('changePassword');
-                changePassword.href = "/ibm/cloud/appid/cloudLand/view/change/password" + languageQuery;
+                changePassword.href = "http://localhost:1234/ibm/cloud/appid/cloudLand/view/change/password" + languageQuery;
 
                 var signUp = document.getElementById('signUp');
-                changePassword.href = "/ibm/cloud/appid/view/sign_up" + languageQuery;
+                changePassword.href = "http://localhost:1234/ibm/cloud/appid/view/sign_up" + languageQuery;
 
 
               });
@@ -510,10 +501,10 @@ label {
         </ul>             
         <ul class="nav navbar-nav navbar-left ">
           <li>
-            <a class="hideOnStartup" href="/ibm/cloud/appid/rop/login" id="loginButton"><span class="glyphicon glyphicon-log-in"></span> Login</a>
-            <a class="hideOnStartup" href="/ibm/cloud/appid/logout" id="logoutButton"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+            <a class="hideOnStartup" href="http://localhost:1234/ibm/cloud/appid/rop/login" id="loginButton"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+            <a class="hideOnStartup" href="http://localhost:1234/ibm/cloud/appid/logout" id="logoutButton"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
           </li>
-          <li><a href="/ibm/cloud/appid/view/sign_up"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+          <li><a href="http://localhost:1234/ibm/cloud/appid/view/sign_up"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
           </li>
         </ul>
     </div>
