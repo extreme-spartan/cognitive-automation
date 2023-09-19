@@ -471,7 +471,95 @@ label {
           font-weight: bold;
           cursor: pointer;
         }
+        /* Modal styles */
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .modal-content {
+          background-color: white;
+          margin: 5% auto;
+          padding: 15px;
+          border: 1px solid #888;
+          width: 70%;
+        }
+        
+        .close {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        /* Slide-in pane styles */
+        /* .slide-pane {
+          position: fixed;
+          top: 0;
+          right: -400px;
+          width: 400px;
+          height: 100%;
+          background-color: white;
+          box-shadow: -3px 0 6px rgba(0, 0, 0, 0.3);
+          transition: right 0.3s ease-in-out;
+        } */
+        
+        .pane-content {
+          padding: 10px;
+        }
+        
+        /* .close-slide {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+          cursor: pointer;
+        } */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 10px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
 
+        /* Modal content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 40px;
+            border: 1px solid #888;
+            max-width: 90%; /* Set a maximum width */
+            max-height: 80%; /* Set a maximum height */
+            overflow: auto; /* Allow vertical scrolling if content overflows */
+        }
+
+        /* Close button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
   </style>
 </head>
 <body>
@@ -485,6 +573,10 @@ label {
         <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand" href="#">Extreme-Spartan</a>
+      <div style="padding: 12px; display: flex; justify-content: flex-end; align-items: center; z-index: 2147483649;">
+        <input id="chatInput" type="text" class="form-control" placeholder="Type in text here .. " autofocus="autofocus" onkeyup="send_txt(id)" oninput="countCharacters()"/>
+        <button style="color: blue" id="send_button" onclick="sendButton(event)">Send</button>
+      </div>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -505,6 +597,12 @@ label {
             <a class="hideOnStartup" href="http://localhost:1234/ibm/cloud/appid/logout" id="logoutButton"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
           </li>
           <li><a href="http://localhost:1234/ibm/cloud/appid/view/sign_up"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+          </li>
+
+        </ul>
+        <ul>
+          <li>
+
           </li>
         </ul>
     </div>
@@ -571,12 +669,12 @@ label {
 
                     <!-- <div class="_29vw7TuPr8BvnPmQim9SyX"> -->
                       <p id="charCount" style='display: none;'>0 characters</p>
-                      <input id="chatInput" type="text" class="form-control" placeholder="Type in text here .. " autofocus="autofocus" onkeyup="send_txt(id)" oninput="countCharacters()"/>
+                      <!-- <input id="chatInput" type="text" class="form-control" placeholder="Type in text here .. " autofocus="autofocus" onkeyup="send_txt(id)" oninput="countCharacters()"/> -->
                         <!-- <div class="_3NF-ok9QLIxL_8hJP-wqln flex-column"> -->
                         <div class="_3me6Qx7Oc-d8q01pJiZkW-">
                           <span>
                             <div class="flex-center dsg-Regular color-gray-dark _30acjYOY3KpZb6rcrQtycV">
-                                <button style="color: blue" id="send_button" onclick="sendButton(event)">Send</button>
+                                <!-- <button style="color: blue" id="send_button" onclick="sendButton(event)">Send</button> -->
                             </div>
                           </span>
                         </div>
@@ -664,12 +762,23 @@ label {
         <!-- <label for="toggle"></label> -->
         <input type="checkbox" id="toggle"> 
         <aside id="asideLabel">
+
+          <!-- Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <canvas id="myChart"></canvas>
+            </div>
+          </div>
+          <button id="recordBtn" hidden="true">Start Meeting</button> 
+          <canvas id="stackedChart" style="height: 100%; width: 100%;"></canvas>
+          
+          <!-- <button id="saveButton">Save Canvas as Image</button> -->
+        
+
+
+
           <img id="cmsImg" > 
-
-
-
-
-
         </aside>          
 
       

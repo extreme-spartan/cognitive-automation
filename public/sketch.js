@@ -1,1 +1,459 @@
-var _0x254fbc=_0x5a7c;(function(_0x11c949,_0x544a90){var _0x391485=_0x5a7c,_0x2ff2e7=_0x11c949();while(!![]){try{var _0x460d75=-parseInt(_0x391485(0xdd))/0x1*(parseInt(_0x391485(0xb4))/0x2)+parseInt(_0x391485(0xaf))/0x3*(-parseInt(_0x391485(0xc3))/0x4)+-parseInt(_0x391485(0xb2))/0x5+parseInt(_0x391485(0xbb))/0x6+parseInt(_0x391485(0xbf))/0x7+parseInt(_0x391485(0xb5))/0x8*(parseInt(_0x391485(0xb1))/0x9)+parseInt(_0x391485(0xb7))/0xa*(-parseInt(_0x391485(0xb0))/0xb);if(_0x460d75===_0x544a90)break;else _0x2ff2e7['push'](_0x2ff2e7['shift']());}catch(_0x4bd306){_0x2ff2e7['push'](_0x2ff2e7['shift']());}}}(_0x3aaa,0x68cbc));var socket,hname=location[_0x254fbc(0xcb)]+'//'+location[_0x254fbc(0xe1)];let fingers;var canvas,cnv,nText='',aText=[],iUrl='';function _0x5a7c(_0x4ecce9,_0x2af079){var _0x3aaabb=_0x3aaa();return _0x5a7c=function(_0x5a7c09,_0x16aef4){_0x5a7c09=_0x5a7c09-0xad;var _0x2ff303=_0x3aaabb[_0x5a7c09];return _0x2ff303;},_0x5a7c(_0x4ecce9,_0x2af079);}let ig;function _0x3aaa(){var _0x17a7f1=['generations','-WF++XF[+++YF++ZF]-','lastIndexOf','circle','[X]++[X]++[X]++[X]++[X]','--YF++++WF[+ZF++++XF]--XF','text','3mJvMcL','mouse','charAt','ruleX','host','ruleY','/public/images/thumbnail.jpeg','onload','production','substr','iterate','simulate','140601PJgoFv','14430482zVrwRH','1533321LLSBjl','1409590JMJyyT','value','5578BzLMng','32uVMoDR','mp4','10ZCuzjE','scribble','steps','theta','4291998ONrRxp','white','repeats','Sending:\x20','4770143XMEaRW','emit','ruleZ','clear','4kKTpKZ','drawLength','startLength','rectangle','vrl','square','black','log','protocol','vid','getAge','loop','scrollTop','line','reset','length','render','onresize','ruleW'];_0x3aaa=function(){return _0x17a7f1;};return _0x3aaa();}var mCX='',mCY='',Sc=_0x254fbc(0xc9),Ss='1',Shp='',Cd=0x0,Fc=_0x254fbc(0xc9);let ds;function setup(){var _0x43a198=_0x254fbc;cnv=createCanvas(windowWidth,windowHeight),socket=io['connect'](hname),socket['on'](_0x43a198(0xde),newDrawing),socket['on']('vid',newText),ds=new PenroseLSystem(),ds[_0x43a198(0xae)](0x5);}class PenroseLSystem{constructor(){var _0x50a117=_0x254fbc;this[_0x50a117(0xb9)]=0x0,this['axiom']=_0x50a117(0xda),this[_0x50a117(0xd5)]='YF++ZF----XF[-YF----WF]++',this[_0x50a117(0xe0)]='+YF--ZF[---WF--XF]+',this[_0x50a117(0xe2)]=_0x50a117(0xd7),this['ruleZ']=_0x50a117(0xdb),this[_0x50a117(0xc5)]=0x1cc,this[_0x50a117(0xba)]=TWO_PI/0xa,this['reset']();}[_0x254fbc(0xae)](_0x31ede2){var _0x380067=_0x254fbc;while(this['getAge']()<_0x31ede2){this['iterate'](this[_0x380067(0xe5)]);}}[_0x254fbc(0xd1)](){var _0x41e1b7=_0x254fbc;this['production']=this['axiom'],this['drawLength']=this[_0x41e1b7(0xc5)],this[_0x41e1b7(0xd6)]=0x0;}[_0x254fbc(0xcd)](){var _0x29a7b4=_0x254fbc;return this[_0x29a7b4(0xd6)];}[_0x254fbc(0xad)](){var _0x449854=_0x254fbc;let _0x379852='';for(let _0x23ac1c=0x0;_0x23ac1c<this[_0x449854(0xe5)][_0x449854(0xd2)];++_0x23ac1c){let _0x1030d3=this[_0x449854(0xe5)][_0x449854(0xdf)](_0x23ac1c);if(_0x1030d3=='W')_0x379852=_0x379852+this[_0x449854(0xd5)];else{if(_0x1030d3=='X')_0x379852=_0x379852+this[_0x449854(0xe0)];else{if(_0x1030d3=='Y')_0x379852=_0x379852+this['ruleY'];else _0x1030d3=='Z'?_0x379852=_0x379852+this[_0x449854(0xc1)]:_0x1030d3!='F'&&(_0x379852=_0x379852+_0x1030d3);}}}this[_0x449854(0xc4)]=this[_0x449854(0xc4)]*0.5,this['generations']++,this[_0x449854(0xe5)]=_0x379852;}[_0x254fbc(0xd3)](){var _0x2a26aa=_0x254fbc;translate(width/0x2,height/0x2),this[_0x2a26aa(0xb9)]+=0x14;this[_0x2a26aa(0xb9)]>this[_0x2a26aa(0xe5)][_0x2a26aa(0xd2)]&&(this[_0x2a26aa(0xb9)]=this['production'][_0x2a26aa(0xd2)]);for(let _0x4ee8f0=0x0;_0x4ee8f0<this[_0x2a26aa(0xb9)];++_0x4ee8f0){let _0x480956=this['production']['charAt'](_0x4ee8f0);if(_0x480956=='F'){stroke(0x0,0x3c);for(let _0x5a3b91=0x0;_0x5a3b91<this['repeats'];_0x5a3b91++){line(0x0,0x0,0x0,-this['drawLength']),noFill(),translate(0x0,-this[_0x2a26aa(0xc4)]);}this[_0x2a26aa(0xbd)]=0x1;}else{if(_0x480956=='+')rotate(this[_0x2a26aa(0xba)]);else{if(_0x480956=='-')rotate(-this[_0x2a26aa(0xba)]);else{if(_0x480956=='[')push();else _0x480956==']'&&pop();}}}}}}function newDrawing(_0x228b46){noStroke(),fill(Fc),stroke(Sc),strokeWeight(Ss);}function newText(_0x5ab5bd){var _0x17e4fc=_0x254fbc;fill(0xff,0x0,0x37),textSize(0x18),stroke(_0x17e4fc(0xc9)),strokeWeight(Ss),nText=_0x5ab5bd['vid'],fill(Fc),rect(0xf,0x14,windowWidth-0x154,windowHeight-0x78),fill(Fc),text(_0x5ab5bd[_0x17e4fc(0xcc)],0x14,0x19,windowWidth-0x168,0x190),historyArea[_0x17e4fc(0xb3)]+=_0x5ab5bd[_0x17e4fc(0xcc)]+'\x0a',historyArea[_0x17e4fc(0xcf)]=historyArea['scrollHeight'];var _0x312ad7=_0x5ab5bd[_0x17e4fc(0xc7)][_0x17e4fc(0xe6)](_0x5ab5bd[_0x17e4fc(0xc7)][_0x17e4fc(0xd8)]('.')+0x1);_0x312ad7===_0x17e4fc(0xb6)?(fingers=createVideo([_0x5ab5bd[_0x17e4fc(0xc7)]]),fingers[_0x17e4fc(0xce)]()):(fill(0xff),loadImage(_0x5ab5bd[_0x17e4fc(0xc7)],_0x3b8c8a=>{image(_0x3b8c8a,0x19,0xdc,0x15e,0xfa);}));if(nText==_0x17e4fc(0xc8))stroke(Sc),strokeWeight(Ss),noFill(),square(0x64,0x78,0xff);else{if(nText==_0x17e4fc(0xc6))stroke(Sc),strokeWeight(Ss),rect(0x14a,0xc8,0x69,0x9b);else nText==_0x17e4fc(0xc2)&&clear();}}function mouseDragged(){var _0xefacae=_0x254fbc;console[_0xefacae(0xca)](_0xefacae(0xbe)+mouseX+','+mouseY);var _0x282f8b={'x':mouseX,'y':mouseY,'px':pmouseX,'py':pmouseY};socket[_0xefacae(0xc0)](_0xefacae(0xde),_0x282f8b),stroke(Sc),strokeWeight(Ss),fill(Fc),Shp==_0xefacae(0xb8)&&line(mouseX,mouseY,pmouseX,pmouseY),Shp==_0xefacae(0xd9)&&circle(mouseX,mouseY,Cd),Shp==_0xefacae(0xc8)&&square(mouseX,mouseY,Cd);}window[_0x254fbc(0xd4)]=function(){};function draw(){var _0x58aac0=_0x254fbc;stroke(Sc),strokeWeight(Ss),fill(Fc),Shp=='save'&&(background(0xff),save(cnv,'myCanvas.jpg'),Shp=''),Shp==_0x58aac0(0xe4)&&(textSize(0x28),stroke(0x0),strokeWeight(0x3),fill(''),strokeWeight(0x1),ds[_0x58aac0(0xd3)]()),Shp=='intro'&&(textSize(0x28),stroke(0x3),loadImage(_0x58aac0(0xe3),_0x1d000c=>{image(_0x1d000c,0x19,0xdc);}),strokeWeight(0x3),fill(''));}function mousePressed(){var _0x45b221=_0x254fbc;fill(0xff,0x0,0x37),textSize(0xc),stroke(Sc),fill(Fc),strokeWeight(Ss),mCX=mouseX,mCY=mouseY;var _0x3c0d8c=mCX+'\x20'+mCY;Shp==_0x45b221(0xd0)&&(noFill(),circle(mCX,mCY,0x14),circle(mouseX,mouseY,0x14),fill(Fc),circle(mouseX,mouseY,0xa),circle(mCX,mCY,0xa));Shp==_0x45b221(0xdc)&&text(Cd,mouseX,mouseY,windowWidth-0x17c,0x1e0);var _0x46fde4={'vid':nText};}function mouseReleased(){var _0x40657a=_0x254fbc;mRX=mouseX,mRY=mouseY;var _0x3d2fbf=mRX+'\x20'+mRY;textSize(0xc),stroke(Sc),strokeWeight(Ss);var _0x4380a1=mouseX+'\x20'+mouseY;Shp=='circle'&&circle(mouseX,mouseY,Cd);Shp==_0x40657a(0xc8)&&square(mouseX,mouseY,Cd);Shp=='line'&&(fill(Fc),line(mCX,mCY,mRX,mRY));var _0x593871={'vid':nText};function _0x4aa7cf(_0x59f38e,_0x3b2307){var _0x2675fc=_0x40657a;fill(0xff,0x0,0x37),textSize(0x18),stroke(_0x2675fc(0xbc)),strokeWeight(0x1),fill(0xff),rect(0xa,0xf,windowWidth-0x145,windowHeight-0x78),fill(0xff,0x0,0x37),text(_0x59f38e,0x12,0x19,windowWidth-0x168,0x190),rl=hname+'/protected/KathaCms'+_0x3b2307;var _0x529d5a=_0x3b2307[_0x2675fc(0xe6)](_0x3b2307[_0x2675fc(0xd8)]('.')+0x1);_0x529d5a===_0x2675fc(0xb6)?(fingers=createVideo([rl]),fingers['play']()):(fill(0xff),loadImage(rl,_0x375230=>{image(_0x375230,0x19,0xdc,0x15e,0xfa);}));if(_0x59f38e==_0x2675fc(0xc8))stroke(Sc),strokeWeight(0x2),noFill(),square(0x64,0x78,0xff);else{if(_0x59f38e==_0x2675fc(0xc6))stroke('green'),strokeWeight(0x2),rect(0x14a,0xc8,0x69,0x9b);else _0x59f38e==_0x2675fc(0xc2)&&clear();}var _0x24656c={'vid':_0x59f38e,'vrl':rl};socket[_0x2675fc(0xc0)](_0x2675fc(0xcc),_0x24656c);}}
+var socket;
+
+var hname = location.protocol+'//'+	location.host;
+// alert(hname);
+
+let fingers;
+
+var canvas;
+
+var cnv;
+
+var nText = '';
+
+var aText = [];
+
+var iUrl = '';
+
+let ig; // Declare variable 'img'.
+
+var mCX = '';
+
+var mCY = '';
+
+var Sc = 'black';
+
+var Ss = '1';
+
+var Shp = '';
+
+var Cd = 0;
+
+var Fc = 'black';
+
+let ds;
+
+function setup(){
+	// alert('setup');
+	cnv = createCanvas(windowWidth,windowHeight);
+
+	// background(51)
+  	// fingers = createVideo(['assets/LittleRedRidingHood_video.mp4']);
+  	// fingers.hide();
+	socket = io.connect(hname);
+	socket.on('mouse', newDrawing);
+	socket.on('vid', newText);
+	// p5eg();
+	ds = new PenroseLSystem();
+	//please, play around with the following line
+	ds.simulate(5);
+
+}
+
+
+
+
+
+// function setup() {
+//   createCanvas(710, 400);
+//   ds = new PenroseLSystem();
+//   //please, play around with the following line
+//   ds.simulate(5);
+// }
+
+// function draw() {
+//   background(255);
+//   ds.render();
+// }
+
+class PenroseLSystem {
+	constructor() {
+		this.steps = 0;
+
+		//these are axiom and rules for the penrose rhombus l-system
+		//a reference would be cool, but I couldn't find a good one
+		this.axiom = "[X]++[X]++[X]++[X]++[X]";
+		this.ruleW = "YF++ZF----XF[-YF----WF]++";
+		this.ruleX = "+YF--ZF[---WF--XF]+";
+		this.ruleY = "-WF++XF[+++YF++ZF]-";
+		this.ruleZ = "--YF++++WF[+ZF++++XF]--XF";
+
+		//please play around with the following two lines
+		this.startLength = 460.0;
+		this.theta = TWO_PI / 10.0; //36 degrees, try TWO_PI / 6.0, ...
+		this.reset();
+	}
+	simulate(gen) {
+		while (this.getAge() < gen) {
+			this.iterate(this.production);
+		}
+	}
+	reset() {
+		this.production = this.axiom;
+		this.drawLength = this.startLength;
+		this.generations = 0;
+	}
+	getAge() {
+		return this.generations;
+	}
+	//apply substitution rules to create new iteration of production string
+	iterate() {
+		let newProduction = "";
+
+		for (let i = 0; i < this.production.length; ++i) {
+			let step = this.production.charAt(i);
+			//if current character is 'W', replace current character
+			//by corresponding rule
+			if (step == 'W') {
+				newProduction = newProduction + this.ruleW;
+			}
+			else if (step == 'X') {
+				newProduction = newProduction + this.ruleX;
+			}
+			else if (step == 'Y') {
+				newProduction = newProduction + this.ruleY;
+			}
+			else if (step == 'Z') {
+				newProduction = newProduction + this.ruleZ;
+			}
+			else {
+				//drop all 'F' characters, don't touch other
+				//characters (i.e. '+', '-', '[', ']'
+				if (step != 'F') {
+					newProduction = newProduction + step;
+				}
+			}
+		}
+
+		this.drawLength = this.drawLength * 0.5;
+		this.generations++;
+		this.production = newProduction;
+	}
+	//convert production string to a turtle graphic
+	render() {
+		translate(width / 2, height / 2);
+
+		this.steps += 20;
+		if (this.steps > this.production.length) {
+			this.steps = this.production.length;
+		}
+
+		for (let i = 0; i < this.steps; ++i) {
+			let step = this.production.charAt(i);
+
+			//'W', 'X', 'Y', 'Z' symbols don't actually correspond to a turtle action
+			if (step == 'F') {
+				stroke(0, 60);
+				for (let j = 0; j < this.repeats; j++) {
+					line(0, 0, 0, -this.drawLength);
+					noFill();
+					translate(0, -this.drawLength);
+				}
+				this.repeats = 1;
+			}
+			else if (step == '+') {
+				rotate(this.theta);
+			}
+			else if (step == '-') {
+				rotate(-this.theta);
+			}
+			else if (step == '[') {
+				push();
+			}
+			else if (step == ']') {
+				pop();
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+function newDrawing(data){
+	noStroke();
+	fill(Fc);
+	//ellipse(data.x, data.y, 16, 16);
+	stroke(Sc);
+	strokeWeight(Ss);
+	//circle(mouseX, mouseY, 1, 1);
+	// line(data.x, data.y, data.px, data.py);	
+}
+
+
+function newText(vdata){
+
+	fill(255,0,55);
+	textSize(24);
+
+	stroke('black');
+	strokeWeight(Ss);
+	nText = vdata.vid;
+  	fill(Fc);
+	rect(15, 20, windowWidth - 340, windowHeight - 120);
+	fill(Fc);
+ 	text(vdata.vid, 20, 25, windowWidth - 360, 400);
+ 	//responsiveVoice.speak(vdata.vid);
+
+ 	historyArea.value += vdata.vid + "\n";                 
+    historyArea.scrollTop = historyArea.scrollHeight; 	
+	var extension = vdata.vrl.substr((vdata.vrl.lastIndexOf('.') +1));
+
+	if (extension === 'mp4'){
+	  	fingers = createVideo([vdata.vrl]);
+	 //fingers.hide();		
+
+ 	 fingers.loop();
+
+ 	 // filter(GRAY);
+ 	 // image(fingers, 150, 150);
+	} else {
+	//text(vdata.vid, 10, 10, 600, 400);
+	//ig = loadImage(vdata.vrl);
+		fill(255);
+		//rect(15, 200, windowWidth - 340, 300);
+		loadImage(vdata.vrl, img => {
+	    	image(img, 25, 220, 350, 250);
+	    });
+
+	}
+ 	 if (nText == 'square'){
+	 	stroke(Sc);
+		strokeWeight(Ss);
+		noFill();
+		square(100, 120, 255);
+	 } else if (nText == 'rectangle'){
+	 	stroke(Sc);
+		strokeWeight(Ss);
+	 	rect(330, 200, 105, 155);
+	 } else if (nText == 'clear'){
+	 	clear();
+	 }
+	
+}
+
+function mouseDragged(){
+	console.log('Sending: '+ mouseX +',' + mouseY);
+	var data = {
+		x: mouseX,
+		y: mouseY,
+		px: pmouseX,
+		py: pmouseY
+	}
+	socket.emit('mouse', data);
+	//fill(255, 0, 100);
+	// circle(mouseX, mouseY, 36, 36);
+	stroke(Sc);
+	strokeWeight(Ss);
+	fill(Fc);
+
+
+	if (Shp == "scribble") {
+		line(mouseX, mouseY, pmouseX, pmouseY);
+	}
+	if (Shp == "circle") {
+		circle(mouseX, mouseY, Cd);
+	}
+	if (Shp == "square") {
+		square(mouseX, mouseY, Cd);
+	}
+
+}
+window.onresize = function() {
+//   canvas.size(windowWidth - 300, windowHeight - 100);
+  //background(51)
+};
+
+
+function draw() {
+	
+	stroke(Sc);
+	strokeWeight(Ss);
+	fill(Fc)
+	// line(mouseX, mouseY, pmouseX, pmouseY);
+
+	if (Shp == "save") {
+		background(255);
+		save(cnv, 'myCanvas.jpg');
+		Shp = '';
+	}
+	if (Shp == "onload") {
+		textSize(40);
+		// fill(255,0,55);
+		stroke(0);
+		// image('/public/images/thumbnail.jpeg', 25, 220, 350, 250);
+		// loadImage('/public/images/thumbnail.jpeg', img => {
+	    // 	image(img, 25, 220, 350, 250);
+	    // });
+		// fill(Fc);
+		strokeWeight(3);
+		fill('');
+		// stroke(Cyan);
+		// text("With Extreme-Spartan", 450,  90);
+		// text("Cognitive Solutions", 430,  500);
+		// text("Welcome to the World of Cognitive Computing!", 150,  40);
+		// background(255);
+		// responsiveVoice.speak("Welcome to the World of Cognitive Computing!");
+		strokeWeight(1);
+		ds.render();
+	}	
+	if (Shp == "intro") {
+		textSize(40);
+		// fill(255,0,55);
+		stroke(3);
+		loadImage('/public/images/thumbnail.jpeg', img => {
+	    	image(img, 25, 220);
+	    });
+		// fill(Fc);
+		strokeWeight(3);
+		fill('');
+		// stroke(Cyan);
+		// text(Cd, 350,  90);
+		text("Cognitive Solutions", 338,  500);
+
+		// background(255);
+		// strokeWeight(1);
+		// ds.render();
+	}
+
+}
+
+
+
+function mousePressed() {
+	// alert(s)
+	
+	fill(255,0,55);
+	textSize(12);
+	stroke(Sc);
+	fill(Fc);
+	strokeWeight(Ss);
+
+	mCX = mouseX;
+	mCY = mouseY;
+	var cxy = mCX+' '+mCY;
+	if (Shp == "line") {
+		noFill();
+		circle(mCX, mCY, 20);
+		circle(mouseX, mouseY, 20);
+
+		fill(Fc)
+		// line(mCX, mCY, mRX, mRY);
+		circle(mouseX, mouseY, 10);
+		circle(mCX, mCY, 10);
+	}
+	if (Shp == "text") {
+		text(Cd, mouseX, mouseY, windowWidth - 380, 480);
+	}
+	// alert(cxy);
+	//text(cxy, mouseX, mouseY, windowWidth - 380, 480);
+	// circle(mouseX, mouseY, 45);
+    var vdata = {
+		vid: nText
+	}
+
+  //fingers.loop(); // set the video to loop and start playing
+}
+
+function mouseReleased() {
+	mRX = mouseX;
+	mRY = mouseY;
+	var crxy = mRX+' '+mRY;
+	// alert(crxy);
+	//fill(255,0,55);
+	textSize(12);	
+	stroke(Sc);
+	strokeWeight(Ss);
+	var cxy = mouseX+' '+mouseY;
+
+
+	if (Shp == "circle") {
+		circle(mouseX, mouseY, Cd);
+	}
+	if (Shp == "square") {
+		square(mouseX, mouseY, Cd);
+	}
+	if (Shp == "line") {
+		// noFill();
+		// circle(mCX, mCY, 20);
+		// circle(mouseX, mouseY, 20);
+
+		fill(Fc)
+		line(mCX, mCY, mRX, mRY);
+		// circle(mouseX, mouseY, 10);
+		// circle(mCX, mCY, 10);
+	}
+	// //text(cxy, mouseX, mouseY, windowWidth - 380, 480);
+
+	// text(uname, mouseX, mouseY, windowWidth - 380, 480);
+	//stroke('blue');
+	//strokeWeight(2);
+	//line(pmouseX, pmouseY, mCX, mCY);
+
+	// line(mCX, mCY, mRX, mRY);
+
+    var vdata = {
+		vid: nText
+	}
+	//circle(mouseX, mouseY, 20);
+	//socket.emit('vid', vdata);
+
+	function narrateText(nText, iUrl) {
+
+		fill(255,0,55);
+		textSize(24);
+	
+		stroke('white');
+		strokeWeight(1);
+		//noFill();
+		fill(255);
+		rect(10, 15, windowWidth - 325, windowHeight - 120);
+		fill(255,0,55);
+		 text(nText, 18, 25, windowWidth - 360, 400);
+		 //	responsiveVoice.speak(nText);
+		rl = hname +'/protected/KathaCms'+iUrl;
+		//rl = 'http://localhost:3000/KathaCms/content/topic/showjackets.jpg'
+		var extension = iUrl.substr((iUrl.lastIndexOf('.') +1));
+		if (extension === 'mp4'){
+			  fingers = createVideo([rl]);
+		 //fingers.hide();		
+	
+		  fingers.play();
+	
+		  // filter(GRAY);
+		  // image(fingers, 150, 150);
+		} else {
+			fill(255);
+		//rect(15, 200, windowWidth - 340, 300);
+		  loadImage(rl, img => {
+			image(img, 25, 220, 350, 250);
+		  });
+		}
+		 if (nText == 'square'){
+			 stroke(Sc);
+			strokeWeight(2);
+			noFill();
+			square(100, 120, 255);
+		 } else if (nText == 'rectangle'){
+			 stroke('green');
+			strokeWeight(2);
+			 rect(330, 200, 105, 155);
+		 } else if (nText == 'clear'){
+			 clear();
+		 }
+	
+		var vdata = {
+			vid: nText,
+			vrl: rl
+		}
+		//circle(mouseX, mouseY, 20);
+		// socket.emit('vid', vdata);
+	
+	}
+
+  //fingers.loop(); // set the video to loop and start playing
+}
