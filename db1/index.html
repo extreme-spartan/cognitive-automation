@@ -730,4 +730,132 @@ canvas.addEventListener("click", function(evt) {
 
 
 
-</script> </article> </div> </div> <a href=# class="md-top md-icon" data-md-component=top hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg> Back to top </a> </main> <footer class=md-footer> <b>SPN</b> <div class="md-footer-meta md-typeset"> </div> </footer> </div> <div class=md-dialog data-md-component=dialog> <div class="md-dialog__inner md-typeset"></div> </div> <script id=__config type=application/json>{"base": "..", "features": ["content.code.annotate", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script> <script src=../assets/javascripts/bundle.431f3d41.min.js></script> <script src=../overrides/assets/javascripts/bundle.1ff6d521.min.js></script> </script> </body> </html>
+</script> <pre class=mermaid><code>
+graph TD
+  subgraph "User"
+    A[Web Browser] --&gt;|Access| B[Mobile UI]
+    A --&gt;|Access| C[Desktop UI]
+  end
+
+  subgraph "Presentation Layer"
+    D[UI Controllers] --&gt;|Render| E[Web Views]
+    D --&gt;|Control| F[Front-end Logic]
+  end
+
+  subgraph "Controller Layer"
+    G[REST API] --&gt;|HTTP| H[Gateway Services]
+    G --&gt;|Data| I[AI Services]
+    H --&gt;|Auth| J[Security Services]
+  end
+
+  subgraph "Model Layer"
+    K[MongoDB] --&gt;|NoSQL| L[CloudantDB]
+    K --&gt;|Structured| M[DB2400]
+    M --&gt;|SQL| N[External Data Sources]
+  end
+
+  I --&gt;|AI Logic| E
+  E --&gt;|User Interface| D
+  B --&gt;|Mobile App| A
+  C --&gt;|Desktop App| A
+  E --&gt;|User Data| K
+  E --&gt;|User Data| L
+  H --&gt;|Security| A
+  F --&gt;|User Interaction| B
+  F --&gt;|User Interaction| C
+  F --&gt;|Data Retrieval| G
+  F --&gt;|Data Processing| I
+  D --&gt;|Presentation Logic| F
+  D --&gt;|Data Exchange| G
+  N --&gt;|External Data| M
+
+  style A fill:#f9f,stroke:#333,stroke-width:4px
+  style B fill:#cfc,stroke:#333,stroke-width:4px
+  style C fill:#cfc,stroke:#333,stroke-width:4px
+  style D fill:#ffc,stroke:#333,stroke-width:4px
+  style E fill:#ffc,stroke:#333,stroke-width:4px
+  style F fill:#fcc,stroke:#333,stroke-width:4px
+  style G fill:#fcc,stroke:#333,stroke-width:4px
+  style H fill:#fcc,stroke:#333,stroke-width:4px
+  style I fill:#fcc,stroke:#333,stroke-width:4px
+  style J fill:#fcc,stroke:#333,stroke-width:4px
+  style K fill:#ccf,stroke:#333,stroke-width:4px
+  style L fill:#ccf,stroke:#333,stroke-width:4px
+  style M fill:#ccf,stroke:#333,stroke-width:4px
+  style N fill:#ccf,stroke:#333,stroke-width:4px</code></pre> <pre class=mermaid><code>sequenceDiagram
+  participant User as User
+  participant Browser as Web Browser
+  participant UI as User Interface
+  participant Controller as Controller Layer
+  participant AI as AI Services
+  participant DB as Model Layer
+  participant Sensors as Sensors
+  participant Cameras as Cameras
+  participant Cloud as Cloud Services
+  participant MobileApp as Mobile App
+  participant DesktopApp as Desktop App
+
+  User -&gt;&gt; Browser: Access CaaS Application
+  Browser -&gt;&gt; UI: Render UI Components
+  UI -&gt;&gt; Controller: User Interactions
+  Controller -&gt;&gt; AI: Request Data Analysis
+  AI -&gt;&gt; DB: Retrieve Historical Data
+  DB --&gt;&gt; AI: Send Data
+  AI -&gt;&gt; Controller: Analyze Data
+  Controller -&gt;&gt; Sensors: Activate Sensors
+  Sensors --&gt;&gt; Controller: Send Sensor Data
+  Controller -&gt;&gt; AI: Process Sensor Data
+  AI --&gt;&gt; Controller: Send Analysis Results
+  Controller -&gt;&gt; Cloud: Send Alerts
+  Cloud --&gt;&gt; Controller: Acknowledge Alerts
+  Controller -&gt;&gt; UI: Update User Interface
+  UI -&gt;&gt; MobileApp: Push Notifications
+  MobileApp -&gt;&gt; User: Alert Notification
+  UI -&gt;&gt; DesktopApp: Push Notifications
+  DesktopApp -&gt;&gt; User: Alert Notification
+
+  alt Fire Detected
+    Sensors -&gt;&gt; Cameras: Activate Cameras
+    Cameras --&gt;&gt; Sensors: Capture Visual Data
+    Sensors -&gt;&gt; Controller: Send Visual Data
+    Controller -&gt;&gt; AI: Analyze Visual Data
+    AI --&gt;&gt; Controller: Identify Fire
+    Controller -&gt;&gt; Cloud: Alert Fire Department
+    Cloud --&gt;&gt; Controller: Confirm Fire Alert
+    Controller -&gt;&gt; UI: Update User Interface (Fire Detected)
+    UI -&gt;&gt; MobileApp: Push Fire Alert
+    MobileApp -&gt;&gt; User: Fire Alert Notification
+    UI -&gt;&gt; DesktopApp: Push Fire Alert
+    DesktopApp -&gt;&gt; User: Fire Alert Notification
+  else No Fire Detected
+    Controller -&gt;&gt; UI: Update User Interface (No Fire)
+    UI -&gt;&gt; MobileApp: Push No Fire Alert
+    MobileApp -&gt;&gt; User: No Fire Alert Notification
+    UI -&gt;&gt; DesktopApp: Push No Fire Alert
+    DesktopApp -&gt;&gt; User: No Fire Alert Notification
+  end
+
+  User -&gt;&gt; Browser: Monitor Fire Detection
+  Browser -&gt;&gt; UI: Render Live Data
+  UI -&gt;&gt; Controller: Continuous Monitoring
+  Controller -&gt;&gt; AI: Real-time Analysis
+  AI -&gt;&gt; DB: Retrieve Current Data
+  DB --&gt;&gt; AI: Send Current Data
+  AI --&gt;&gt; Controller: Send Analysis Results
+  Controller -&gt;&gt; UI: Update Live Data
+
+  User -&gt;&gt; Browser: Control Fire Prevention
+  Browser -&gt;&gt; UI: Adjust Settings
+  UI -&gt;&gt; Controller: User Preferences
+  Controller -&gt;&gt; AI: Apply User Settings
+  AI -&gt;&gt; DB: Update Configuration
+  DB --&gt;&gt; AI: Confirm Configuration
+  AI --&gt;&gt; Controller: Configuration Updated
+  Controller -&gt;&gt; UI: Confirm User Changes
+  UI -&gt;&gt; User: Settings Updated
+
+  User -&gt;&gt; Browser: Logout
+  Browser -&gt;&gt; UI: Close Application
+  UI -&gt;&gt; Controller: Terminate Session
+  Controller --&gt;&gt; UI: Session Ended
+  UI -&gt;&gt; User: Logout Complete</code></pre> </article> </div> </div> <a href=# class="md-top md-icon" data-md-component=top hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg> Back to top </a> </main> <footer class=md-footer> <b>SPN</b> <div class="md-footer-meta md-typeset"> </div> </footer> </div> <div class=md-dialog data-md-component=dialog> <div class="md-dialog__inner md-typeset"></div> </div> <script id=__config type=application/json>{"base": "..", "features": ["content.code.annotate", "content.tooltips", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script> <script src=../assets/javascripts/bundle.431f3d41.min.js></script> <script src=../overrides/assets/javascripts/bundle.1ff6d521.min.js></script> </script> </body> </html>

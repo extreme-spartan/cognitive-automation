@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Playlist</title>
+</head>
+<body>
+    <video id="videoPlayer" width="310" height="380" controls></video>
+    <button id="playPauseButton">Play</button>
+    <button id="stopButton">Stop</button>
+
+    <script>
+        var globalContentJsonObj = {
+            videos: [
+                {
+                    src:  "esd0001.mov",
+                    title: "Video 1",
+                    startTime: 0, // Start time in seconds
+                    endTime: 57,   // End time in seconds
+                },
+                {
+                    src: "esd0002.mov",
+                    title: "Video 2",   
+                    startTime: 3, // Start time in seconds
+                    endTime: 120.04,   // End time in seconds
+                },
+                {
+                    src:  "esd0003.mov",
+                    title: "Video 3",
+                    startTime: 3, // Start time in seconds
+                    endTime: 60.07,   // End time in seconds
+                },
+                {
+                    src: "esd0004.mov",
+                    title: "Video 4",
+                    startTime: 3, // Start time in seconds
+                    endTime: 60.02,   // End time in seconds
+                },
+                {
+                    src:  "esd0005.mov",
+                    title: "Video 5",
+                    startTime: 3, // Start time in seconds
+                    endTime: 60.03,   // End time in seconds
+                },
+                {
+                    src: "esd0006.mov",
+                    title: "Video 6",
+                    startTime: 3, // Start time in seconds
+                    endTime: 60.03,   // End time in seconds
+                },
+                {
+                    src: "esd0007.mov",
+                    title: "Video 7",
+                    startTime: 3, // Start time in seconds
+                    endTime: 58,   // End time in seconds
+                },
+                {
+                    src:  "esd0008.mov",
+                    title: "Video 8",
+                    startTime: 3, // Start time in seconds
+                    endTime: 43,   // End time in seconds
+                },
+                // Add more videos here
+            ]
+        };
+
+        var videoPlayer = document.getElementById("videoPlayer");
+        var playPauseButton = document.getElementById("playPauseButton");
+        var stopButton = document.getElementById("stopButton");
+
+        var currentVideoIndex = 0;
+
+        function playVideo(videoIndex) {
+            if (videoIndex < globalContentJsonObj.videos.length) {
+                var video = globalContentJsonObj.videos[videoIndex];
+                videoPlayer.src = video.src;
+                videoPlayer.currentTime = video.startTime;
+                // alert(video.startTime)
+                videoPlayer.play();
+            }
+        }
+
+        playPauseButton.addEventListener("click", function () {
+            if (videoPlayer.paused) {
+                videoPlayer.play();
+                playPauseButton.textContent = "Pause";
+            } else {
+                videoPlayer.pause();
+                playPauseButton.textContent = "Play";
+            }
+        });
+
+        stopButton.addEventListener("click", function () {
+            videoPlayer.pause();
+            videoPlayer.currentTime = 0;
+            playPauseButton.textContent = "Play";
+        });
+
+        videoPlayer.addEventListener("ended", function () {
+            currentVideoIndex++;
+            if (currentVideoIndex < globalContentJsonObj.videos.length) {
+                playVideo(currentVideoIndex);
+            } else {
+                // All videos have been played
+                videoPlayer.pause();
+                playPauseButton.textContent = "Play";
+            }
+        });
+
+        // Monitor the video's time for automatic playback control
+        videoPlayer.addEventListener("timeupdate", function () {
+            var video = globalContentJsonObj.videos[currentVideoIndex];
+            if (videoPlayer.currentTime >= video.endTime) {
+                // If the current time reaches the end time, play the next video
+                currentVideoIndex++;
+                if (currentVideoIndex < globalContentJsonObj.videos.length) {
+                    playVideo(currentVideoIndex);
+                } else {
+                    // All videos have been played
+                    videoPlayer.pause();
+                    playPauseButton.textContent = "Play";
+                }
+            }
+        });
+
+        // Start playing the first video
+        playVideo(currentVideoIndex);
+    </script>
+</body>
+</html>

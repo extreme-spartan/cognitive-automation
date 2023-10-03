@@ -1,0 +1,88 @@
+{
+    "id": "0901901",
+    "name": "Escape102",
+    "description": "ES_Program_101",
+    "images": [
+        {
+            "thumbnail": "",
+            "iuri": "image0001.jpg",
+            "title": "Implementing Cognitive Automation as a Service for Fire Detection Protection",
+            "description": "Explore the innovative approach of using cognitive automation to enhance fire detection and protection. Leveraging the power of IBM Watson, ChatGPT, and Ansible, we have developed a cutting-edge solution that can be deployed on multiple cloud services including IBM, Google, Azure, and AWS. Our goal is to revolutionize fire safety practices and proactively detect and prevent fire incidents, ultimately saving lives and protecting valuable assets.",
+            "vuri": "ES_P0001.mov",
+            "duration": 0.30
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0002.jpg",
+            "title": "Enhancing Fire Safety with Cognitive Automation",
+            "description": "Discover how cognitive automation is transforming the field of fire safety. We delve into the technical aspects of our solution and how it utilizes IBM Watson, ChatGPT, and Ansible to provide real-time fire detection and protection. Learn about the benefits of deploying this service on IBM, Google, Azure, and AWS cloud platforms.",
+            "vuri": "ES_P0002.mov",
+            "duration": 0.30
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0003.jpg",
+            "title": "The Power of AI in Fire Detection",
+            "description": "AI plays a crucial role in our fire detection and protection system. This article explains the key AI components and algorithms used to analyze environmental data and detect potential fire hazards. We'll also discuss the advantages of using AI in fire safety applications.",
+            "vuri": "ES_P0003.mov",
+            "duration": 0.30
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0004.jpg",
+            "title": "Deploying on IBM Cloud",
+            "description": "Learn how to deploy our cognitive automation solution on the IBM Cloud platform. We provide step-by-step instructions and insights into the benefits of using IBM's cloud infrastructure for fire detection and protection.",
+            "vuri": "ES_P0004.mov",
+            "duration": 0.30
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0005.jpg",
+            "title": "Proactive Fire Prevention with ChatGPT",
+            "description": "ChatGPT is a key component of our solution. This article explores how ChatGPT assists in proactive fire prevention by providing real-time insights and recommendations to fire officers. Discover the capabilities of ChatGPT in fire safety applications.",
+            "vuri": "ES_P0005.mov",
+            "duration": 0.30
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0006.jpg",
+            "title": "Automation with Ansible",
+            "description": "Ansible is at the heart of our automation process. Learn how Ansible streamlines fire safety tasks, automates responses to potential fire incidents, and ensures the efficient operation of our cognitive automation service.",
+            "vuri": "ES_P0006.mov",
+            "duration": 0.30
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0007.jpg",
+            "title": "Azure Cloud Deployment",
+            "description": "This article focuses on deploying our solution on Microsoft Azure. Explore the advantages of using Azure's cloud services for fire detection and protection. Get insights into the scalability and reliability of our solution on Azure.",
+            "vuri": "ES_P0007.mov",
+            "duration": 0.30
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0008.jpg",
+            "title": "Real-time Monitoring and Alerts",
+            "description": "Discover how our system provides real-time monitoring of environmental factors and instant alerts to fire officers. This crucial feature enables quick responses to potential fire hazards, minimizing risks and damage.",
+            "vuri": "ES_P0008.mov",
+            "duration": 0.30
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0009.jpg",
+            "title": "AWS Cloud Integration",
+            "description": "Learn about integrating our cognitive automation solution with Amazon Web Services (AWS). Explore the flexibility and scalability of AWS cloud services in the context of fire detection and protection.",
+            "vuri": "ES_P0009.mov",
+            "duration": 0.30
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0010.jpg",
+            "title": "Analytics and Reporting",
+            "description": "This article dives into the analytics and reporting capabilities of our system. Discover how we provide valuable insights and data-driven recommendations for fire safety strategies and improvements. Gain a comprehensive view of fire safety operations through advanced analytics.",
+            "vuri": "ES_P0010.mov",
+            "duration": 0.30
+        }
+        
+    ]
+}

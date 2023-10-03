@@ -4,88 +4,76 @@
 	"description": "Extreme-Spartan 101",
 	"images": [
 	    {
+			"thumbnail": "",
+			"uri": "content/story/red_riding_hood/images/Red_Riding_Hood_Front.jpg",
+			"title": "General Intro by Event Coodinator",
+			"description": "Hello Everyone! Greetings for the day and Welcome to the show. I'm Alice, your event coordinator for today's session 'Automation as a Service for Fire Detection & Protection'. Our speaker Mr.Erphan Desai is the Chief Fire Auditor for BMC and the Executive Director of Eureka. Hang on a moment and you will be connected to the session.",
+			"vuri": "/cognitive-automation/public/alice.idle.mp4",
+			"duration": 0.30
+	   	},
+	    {
 	         "thumbnail": "",
 	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_Front.jpg",
-	         "title": "Escape 101",
-	         "description": "Welcome to the World of Cognitive Programming from Extreme-Spartan!!"
+	         "title": "Intro by Speaker",
+	         "description": "Hello! I'm Erphan Desai, the Chief Fire Auditor for BMC and the Executive Director of Eureka Fire-Tech Private Limited. Our company is dedicated to creating innovative and effective fire protection solutions to ensure the safety and security of human life and assets. Joining me is Sridhar P Naidu, the CEO and Chief Architect of Extreme-Spartan Cognitive Solutions. Together, we have developed an exciting new offering called Automation as a Service for Chief Fire Officers. This groundbreaking technology allows fire officers to proactively detect and protect human life and assets through advanced automation and cognitive capabilities. Our goal is to empower fire officers with the tools they need to stay ahead of fire incidents, enabling them to take quick and effective action to prevent and minimize damage. With our Automation as a Service offering, we are revolutionizing fire safety practices and making the world a safer place.",
+			 "vuri": "/cognitive-automation/public/videos/esd0001.mov",
+		    "duration": 0.57
 	    },
 	    {
-	         "thumbnail": "",
-	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_1.jpg",
-	         "title": "Escape 101 1/8",
-	         "description": "Hello, my name is SPN, I am the Chief Architect at Extreme-Spartan Cognitive Solutions"
-	    },
+			"thumbnail": "",
+			"uri": "content/story/red_riding_hood/images/Red_Riding_Hood_Front.jpg",
+			"title": "Escape 102",
+			"description": "We are thrilled to introduce this game-changing solution to the fire safety industry. Our Automation as a Service offering combines cutting-edge technology, advanced analytics, and artificial intelligence to provide real-time monitoring and predictive capabilities. With this service, Chief Fire Officers will have access to a comprehensive set of tools and features that enable them to detect potential fire hazards, analyze risk factors, and take proactive measures to prevent incidents. Our system uses a combination of sensors, cameras, and intelligent algorithms to monitor environments and identify potential fire risks. Through the power of automation, our solution can quickly analyze vast amounts of data and provide real-time alerts and recommendations to fire officers. This enables them to make informed decisions and take swift action to protect human life and assets. Additionally, our service includes advanced reporting and analytics capabilities, providing valuable insights and data-driven recommendations for fire safety strategies and improvements.",
+			"vuri": "/cognitive-automation/public/videos/esd.0002a.mov",
+		    "duration": 1.13
+	   },
+	   {
+			"thumbnail": "",
+			"uri": "content/story/red_riding_hood/images/Red_Riding_Hood_Front.jpg",
+			"title": "Escape 101",
+			"description": "As the Chief Fire Auditor for BMC and the Executive Director of Eureka Fire-Tech Private Limited, I bring years of experience in fire safety and prevention. My team and I have worked tirelessly to develop this innovative solution, ensuring that it meets the highest standards of safety and effectiveness.Joining me is Sridhar P Naidu, the CEO and Chief Architect of Extreme-Spartan Cognitive Solutions. Sridhar brings a wealth of expertise in cognitive computing and artificial intelligence, and his visionary leadership has been instrumental in the development of our Automation as a Service offering.Together, our companies have united to address the pressing need for proactive fire safety measures. We believe that prevention is the key to saving lives and protecting valuable assets. With our solution, Chief Fire Officers will have a powerful tool at their disposal to detect potential fire risks before they escalate.",
+			"vuri": "/cognitive-automation/public/videos/esd.0003.mov",
+		    "duration": 0.54
+		},	  
+		{
+			"thumbnail": "",
+			"uri": "content/story/red_riding_hood/images/Red_Riding_Hood_Front.jpg",
+			"title": "Escape 101",
+			"description": "With our solution, fire officers can gain a comprehensive understanding of potential fire risks across different locations and take proactive measures to eliminate or mitigate those risks. Our Automation as a Service offering also includes features such as remote monitoring, real-time data visualization, and predictive analytics. This enables fire officers to have a holistic view of their fire safety operations and make data-driven decisions to optimize their resources and response strategies. As the CEO and Chief Architect of Extreme-Spartan Cognitive Solutions, Sridhar brings extensive expertise in cognitive computing and artificial intelligence. His visionary leadership has been instrumental in developing this innovative offering, which combines the power of advanced technologies with the goal of saving lives and protecting valuable assets. Together, our companies are committed to creating a safer world by empowering Chief Fire Officers with the tools they need to detect and prevent fire incidents proactively.",
+			"vuri": "/cognitive-automation/public/videos/esd.0004.mov",
+		    "duration": 1.0
+		},	  
+		{
+			"thumbnail": "",
+			"uri": "content/story/red_riding_hood/images/Red_Riding_Hood_Front.jpg",
+			"title": "Escape 101",
+			"description": "Our solution harnesses the power of automation, artificial intelligence, and real-time data analysis to provide fire officers with a proactive approach to fire safety. By continuously monitoring and analyzing various parameters, our system can identify potential fire hazards and alert fire officers in real-time. This allows them to respond swiftly and effectively, preventing the escalation of fire incidents and minimizing the impact on human life and assets. In addition, our Automation as a Service offering provides Chief Fire Officers with comprehensive reporting and analytics capabilities. This enables them to gain valuable insights into fire safety trends, identify areas of improvement, and make data-driven decisions to optimize their fire safety strategies.",
+			"vuri": "/cognitive-automation/public/videos/esd.0005.mov",
+		    "duration": 0.47
+		},	  
+		{
+			"thumbnail": "",
+			"uri": "content/story/red_riding_hood/images/Red_Riding_Hood_Front.jpg",
+			"title": "Escape 101",
+			"description": "Our Automation as a Service offering is designed to not only detect and protect human life and assets but also to empower Chief Fire Officers with the knowledge and tools to prevent fire incidents before they occur. Through our solution, fire officers can access a centralized dashboard that provides real-time information on fire risks, alerts, and recommended actions. They can also leverage advanced analytics and predictive modeling to identify patterns and trends that may indicate potential fire hazards. This proactive approach allows fire officers to implement preventive measures, such as enhanced fire safety protocols, improved infrastructure, and targeted education and training programs. Furthermore, our Automation as a Service offering includes ongoing support and updates to ensure that fire officers always have access to the latest technology and advancements in fire safety. We are dedicated to continuously enhancing our solution to meet the evolving needs and challenges faced by Chief Fire Officers.",
+			"vuri": "/cognitive-automation/public/videos/esd0006a.mov",
+		    "duration": 0.59
+		},	
+		{
+			"thumbnail": "",
+			"uri": "content/story/red_riding_hood/images/Red_Riding_Hood_Front.jpg",
+			"title": "Escape 101",
+			"description": "We value your expertise and insights, and we look forward to discussing how our solution can benefit your fire safety operations. Thank you for taking the time to learn about our Automation as a Service offering. We appreciate your dedication to fire safety, and we are excited to collaborate with you in creating a safer world.",
+			"vuri": "/cognitive-automation/public/videos/esd.0008.mov",
+		    "duration": 0.19
+		},	 
 	    {
-	         "thumbnail": "",
-	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_2.jpg",
-	         "title": "Escape 101 2/8",
-	         "description": "Ours is a young startup company offering Cloud based products for Automation as a Service for Industries."
-	    },
-	    {
-	         "thumbnail": "",
-	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_3.jpg",
-	         "title": "Escape 101 3/8",
-	         "description": "At Extreme-Spartan, we are driven by a vision of revolutionising industries through cutting-edge AI technologies."
-	    },
-	    {
-	         "thumbnail": "",
-	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_4.jpg",
-	         "title": "Escape 101 4/8",
-	         "description": "The teams commitment to excellence and innovation has led us to create a platform that seamlessly integrates cognitive automation into various aspects of businesses. "
-	    },
-	    {
-	         "thumbnail": "",
-	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_5.jpg",
-	         "title": "Escape 101 5/8",
-	         "description": "By harnessing the power of AI, we aim to bring efficiency, accuracy, and transformative growth to every industry we touch"
-	    },
-	    {
-	         "thumbnail": "",
-	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_6.jpg",
-	         "title": "Escape 101 6/8",
-	         "description": "With a deep understanding of the ever-evolving landscape of technology, I have personally led our team to create solutions that are not just advanced but adaptable to the unique needs of each industry."
-	    },
-	    {
-	         "thumbnail": "",
-	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_7.jpg",
-	         "title": "Escape 101 7/8",
-	         "description": "Our AI-driven products and services have been meticulously designed to provide actionable insights, streamline operations, and enable intelligent decision-making."
-	    },
-	    {
-	         "thumbnail": "",
-	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_8.jpg",
-	         "title": "Escape 101 8/8",
-	         "description": "I believe that the integration of AI and automation will play a pivotal role in shaping the future of business and innovation."
-	    },
-	    {
-	         "thumbnail": "",
-	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_8.jpg",
-	         "title": "Escape 101 8/8",
-	         "description": "I invite you to explore the possibilities that Extreme-Spartan has to offer."
-	    },
-	    {
-	         "thumbnail": "",
-	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_8.jpg",
-	         "title": "Escape 101 8/8",
-	         "description": "Together, we can unlock new horizons of success and drive transformative change across industries."
-	    },
-	    {
-	         "thumbnail": "",
-	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_8.jpg",
-	         "title": "Escape 101 8/8",
-	         "description": "When you are ready, please type:'gtg' in the textbox on right and click on the button:'Send' "
-	    },
-	    {
-	         "thumbnail": "",
-	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_8.jpg",
-	         "title": "Escape 101 8/8",
-	         "description": "This will bring out the industries where there is a real need of AI."
-	    },
-	    {
-	         "thumbnail": "",
-	         "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_8.jpg",
-	         "title": "Escape 101 8/8",
-	         "description": "Good Luck and happy learning!!"
-	    }
+		   "thumbnail": "",
+		   "uri": "content/story/red_riding_hood/images/Red_Riding_Hood_Front.jpg",
+		   "title": "Escape 101",
+		   "description": "Thank you. The session is now open for any Questions and Clarifications!!.",
+		   "vuri": "/cognitive-automation/public/videos/alice.idle.mp4",
+		    "duration": 0.20
+	  	}
 	]
 }

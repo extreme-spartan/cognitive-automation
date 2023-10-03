@@ -1,0 +1,81 @@
+{
+    "Article_id": "0901901",
+    "Article_name": "Escape102",
+    "intro": "In this guide, we will walk you through the process of deploying and running a fire safety simulation using our Cognitive Automation as a Service (CaaS) solution. This simulation is designed to train staff and educate residents on fire detection and protection procedures.",
+    "outro": "Congratulations! You have successfully completed the fire safety simulation. This training exercise is designed to equip you with the necessary skills to detect and respond to fire risks effectively. Remember, practice makes perfect, so feel free to run the simulation multiple times to enhance your proficiency.",
+    "images": [
+      {
+        "thumbnail": "",
+        "iuri": "image0001.jpg",
+        "title": "Step 1: Accessing the Simulation",
+        "description": "Visit the provided simulation website or application. Log in with your provided credentials.",
+        "vuri": "ES_P0001.mov",
+        "duration": 0.20
+      },
+      {
+        "thumbnail": "",
+        "iuri": "image0002.jpg",
+        "title": "Step 2: Understanding the Interface",
+        "description": "Familiarize yourself with the simulation interface. You will see various sections for sensor data, camera feeds, and AI-generated insights.",
+        "vuri": "ES_P0002.mov",
+        "duration": 0.45
+      },
+      {
+        "thumbnail": "",
+        "iuri": "image0003.jpg",
+        "title": "Step 3: Starting the Simulation",
+        "description": "Click on the 'Start Simulation' button to initiate the training scenario. You will observe simulated sensor data and camera feeds.",
+        "vuri": "ES_P0003.mov",
+        "duration": 0.63
+      },
+      {
+        "thumbnail": "",
+        "iuri": "image0004.jpg",
+        "title": "Step 4: Interacting with Sensor Data",
+        "description": "Observe the sensor data for parameters like temperature, smoke level, and gas detection. Analyze the trends and values to identify potential fire risks.",
+        "vuri": "ES_P0004.mov",
+        "duration": 0.52
+      },
+      {
+        "thumbnail": "",
+        "iuri": "image0005.jpg",
+        "title": "Step 5: Analyzing Camera Feeds",
+        "description": "Click on the camera feed section to view live images. Pay attention to any signs of smoke or fire in the feed.",
+        "vuri": "ES_P0005.mov",
+        "duration": 0.57
+      },
+      {
+        "thumbnail": "",
+        "iuri": "image0006.jpg",
+        "title": "Step 6: Responding to Fire Detection",
+        "description": "If you detect a potential fire risk, click on the 'Raise Alert' button. Follow the on-screen instructions for the appropriate response.",
+        "vuri": "ES_P0006.mov",
+        "duration": 0.68
+      },
+      {
+        "thumbnail": "",
+        "iuri": "image0007.jpg",
+        "title": "Step 7: Evacuation Procedures",
+        "description": "If required, initiate evacuation procedures based on the severity of the fire risk.",
+        "vuri": "ES_P0007.mov",
+        "duration": 0.42
+      },
+      {
+        "thumbnail": "",
+        "iuri": "image0008.jpg",
+        "title": "Step 8: Reviewing AI Insights",
+        "description": "Explore the AI-generated insights section for additional recommendations and insights.",
+        "vuri": "ES_P0008.mov",
+        "duration": 0.55
+      },
+      {
+        "thumbnail": "",
+        "iuri": "image0009.jpg",
+        "title": "Step 9: Completing the Simulation",
+        "description": "Once the simulation scenario is complete, click on the 'End Simulation' button.",
+        "vuri": "ES_P0009.mov",
+        "duration": 0.37
+      }
+    ]
+  }
+  
