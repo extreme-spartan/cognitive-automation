@@ -1,0 +1,48 @@
+{
+    "Article_id": "0901901",
+    "Article_name": "SPN Intro",
+    "intro": "Implementing a Cognitive Automation as a Service Solution for Fire Detection and Protection requires a combination of various hardware (HW) and software (SW) technologies to ensure effective and efficient operation.",
+    "outro": "These technologies, both hardware and software, work together to create a comprehensive Cognitive Automation as a Service Solution for Fire Detection and Protection, ensuring the safety of human life and assets through advanced automation and cognitive capabilities. The specific choice of technologies may vary depending on the project's requirements and budget.",
+    "images": [
+        {
+            "thumbnail": "",
+            "iuri": "image0001.jpg",
+            "title": "Sridhar P Naidu - Introduction",
+            "description": "Hello there! I'm Sridhar P Naidu, the CEO and Chief Architect of Extreme-Spartan Cognitive Solutions. It's great to meet you! As an innovator at heart, my mission is to provide cutting-edge solutions to industries across the world. Our startup offers Automation as a Service products for both IaaS and SaaS consuming industries. We're all about helping businesses reduce their overall operations and business expenses by a whopping fifty percent! It's an exciting journey, and I'm thrilled to be leading the charge.",
+            "vuri": "/cognitive-automation/public/videos/spn.self.aas.cwb.mov",
+            "duration": 0.36
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0001.jpg",
+            "title": "ESCAPE - Automation as a Service",
+            "description": "Automation as a Service Application Solution.",
+            "vuri": "/cognitive-automation/public/videos/spn10001AaaS-01.mov",
+            "duration": 1.02
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0001.jpg",
+            "title": "ESCAPE - Automation as a Service",
+            "description": "Automation as a Service - Component Details",
+            "vuri": "/cognitive-automation/public/videos/spn10001AaaS-02.mov",
+            "duration": 1.03
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0001.jpg",
+            "title": "ESCAPE - Automation as a Service",
+            "description": "Automation as a Service - For fire Egineering and Safety",
+            "vuri": "/cognitive-automation/public/videos/spn10001AaaS-03.mov",
+            "duration": 1.05
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0003.jpg",
+            "title": "",
+            "description": "",
+            "vuri": "/cognitive-automation/public/videos/spn.idle.mov",
+            "duration": 0.05
+        }
+    ]
+}

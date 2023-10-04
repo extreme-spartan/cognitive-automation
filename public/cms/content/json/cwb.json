@@ -1,0 +1,33 @@
+{
+    "Article_id": "0901901",
+    "Article_name": "SPN Intro",
+    "intro": "Implementing a Cognitive Automation as a Service Solution for Fire Detection and Protection requires a combination of various hardware (HW) and software (SW) technologies to ensure effective and efficient operation.",
+    "outro": "These technologies, both hardware and software, work together to create a comprehensive Cognitive Automation as a Service Solution for Fire Detection and Protection, ensuring the safety of human life and assets through advanced automation and cognitive capabilities. The specific choice of technologies may vary depending on the project's requirements and budget.",
+    "images": [
+        {
+            "thumbnail": "",
+            "iuri": "image0001.jpg",
+            "title": "ESCAPE - Automation as a Service",
+            "description": "At Extreme-Spartan Cognitive Solutions, we offer a powerful tool called the Cognitive AI Workbench. This workbench is designed to provide organizations with a subscription-based platform to create cognitive forms and cognitive charts. The Cognitive AI Workbench allows users to easily build intelligent forms that can understand and interpret data, enabling them to automate complex processes and enhance productivity. With its intuitive interface and advanced machine learning capabilities, users can create forms that extract meaningful information from unstructured data, making data processing more efficient and accurate. In addition, the Cognitive AI Workbench also enables users to create cognitive charts. These charts leverage artificial intelligence and natural language processing to analyze and visualize data, helping organizations gain valuable insights and make data-driven decisions.",
+            "vuri": "/cognitive-automation/public/videos/cwb-001.mov",
+            "duration": 0.56
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0001.jpg",
+            "title": "ESCAPE - Automation as a Service",
+            "description": "One of the key use cases of our platform is the creation of a bot marketplace. We provide an ecosystem where customers can deploy bots with specific skills or expertise. The ability for individual professionals to create and configure themselves as bots and be open for business in the bot marketplace brings a dynamic change to the way AI is utilized. It ensures that professionals can maintain their unique position in the market and avoid being replaced by generic or random bots. By creating and configuring themselves as bots, professionals can showcase their expertise, skills, and knowledge in a highly personalized and interactive way. This allows them to offer their services in a targeted and specialized manner, catering to the specific needs of their clients. The bot marketplace serves as a platform where professionals can promote their bot services and connect with potential customers. This creates a win-win situation, as professionals can monetize their expertise while customers can access the skills and knowledge they require. This approach revolutionizes the way AI is used by individuals, providing them with the opportunity to establish their presence in the market and differentiate themselves from generic AI.",
+            "vuri": "/cognitive-automation/public/videos/cwb-002.mov",
+            "duration": 1.19
+        },
+        
+        {
+            "thumbnail": "",
+            "iuri": "image0003.jpg",
+            "title": "",
+            "description": "",
+            "vuri": "/cognitive-automation/public/videos/spn.idle.mov",
+            "duration": 0.05
+        }
+    ]
+}
