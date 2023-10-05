@@ -8,7 +8,7 @@
             "thumbnail": "101",
             "iuri": "image0001.jpg",
             "title": "Eureka - Automation as a Service for Fire Engineering",
-            "description": "At Extreme-Spartan Cognitive Solutions, we offer a powerful tool called the Cognitive AI Workbench. This workbench is designed to provide organizations with a subscription-based platform to create cognitive forms and cognitive charts. The Cognitive AI Workbench allows users to easily build intelligent forms that can understand and interpret data, enabling them to automate complex processes and enhance productivity. With its intuitive interface and advanced machine learning capabilities, users can create forms that extract meaningful information from unstructured data, making data processing more efficient and accurate. In addition, the Cognitive AI Workbench also enables users to create cognitive charts. These charts leverage artificial intelligence and natural language processing to analyze and visualize data, helping organizations gain valuable insights and make data-driven decisions.",
+            "description": "Meeting Id: 101 \n\nPlease type the meeting id and press enter or click on the send button",
             "vuri": "escape101.json",
             "duration": 0
         },
@@ -16,8 +16,16 @@
             "thumbnail": "102",
             "iuri": "image0001.jpg",
             "title": "ESCAPE - Automation as a Service",
-            "description": "SS",
+            "description": "Meeting Id: 102 \n\nPlease type the meeting id and press enter or click on the send button",
             "vuri": "aaas.json",
+            "duration": 0
+        },
+        {
+            "thumbnail": "103",
+            "iuri": "image0001.jpg",
+            "title": "Extreme-Spartan Cognitive Workbench",
+            "description": "Meeting Id: 103 \n\nPlease type the meeting id and press enter or click on the send button",
+            "vuri": "cwb.json",
             "duration": 0
         },
         {
