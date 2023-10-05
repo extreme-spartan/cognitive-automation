@@ -8,9 +8,25 @@
             "thumbnail": "",
             "iuri": "image0001.jpg",
             "title": "Sridhar P Naidu - Introduction",
-            "description": "Hello there! I'm Sridhar P Naidu, the CEO and Chief Architect of Extreme-Spartan Cognitive Solutions. It's great to meet you! As an innovator at heart, my mission is to provide cutting-edge solutions to industries across the world. Our startup offers Automation as a Service products for both IaaS and SaaS consuming industries. We're all about helping businesses reduce their overall operations and business expenses by a whopping fifty percent! It's an exciting journey, and I'm thrilled to be leading the charge.",
+            "description": "Hello there! I'm Sridhar P Naidu, the CEO and Chief Architect of Extreme-Spartan Cognitive Solutions. It's great to meet you! As an innovator at heart, my mission is to provide cutting-edge solutions to industries across the world. Our startup offers Automation as a Service products for both IaaS and SaaS consuming industries. We're all about helping businesses reduce their overall operations and business expenses by a whopping fifty percent! It's an exciting journey, and I'm thrilled to be leading the charge. So, how can I assist you today?",
             "vuri": "/cognitive-automation/public/videos/spn.esintro.001.mov",
             "duration": 0.36
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0002.jpg",
+            "title": "Join an event?",
+            "description": "To proceed with joining the event, please type 'join event'",
+            "vuri": "/cognitive-automation/public/videos/spn.joinevent.mov",
+            "duration": 0.05
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image0002.jpg",
+            "title": "Join an event?",
+            "description": "Please type 'incident report' to bring up the daily incident chart",
+            "vuri": "/cognitive-automation/public/videos/spn.incident.mov",
+            "duration": 0.04
         },
         {
             "thumbnail": "",
