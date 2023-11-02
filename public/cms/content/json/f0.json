@@ -1,0 +1,15 @@
+{
+    "Article_id": "0901901",
+    "Article_name": "SPN Intro",
+    "intro": "Hello there! Thanks for dropping by. Isn't it a beautiful day? How can I help you?",
+    "images": [
+        {
+            "thumbnail": "",
+            "iuri": "image0001.jpg",
+            "title": "Getting Started",
+            "description": "You can get started by typing,\n 1. 'intro' to get an intro of SPN.\n 2. 'aaas' to understand the offering Austomation as a Service.\n 3. 'join event' to join any upcoming event/meeting.\n 4. 'incident report' to bring up the daily incident chart, and then type 'start sod' to start the SoD.\n 5. 'canvas' to get into creative programming, type 'canvas' again to get back to workbench view.\n\nGood Luck and Have a wonderful time.",
+            "vuri": "/cognitive-automation/public/videos/spn.idle.mov",
+            "duration": 0.0
+        }
+    ]
+}

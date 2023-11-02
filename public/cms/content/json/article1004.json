@@ -1,0 +1,56 @@
+{
+    "Article_id": "0901901",
+    "Article_name": "Recruitment Agencies and Cognitive AI",
+    "intro": "Recruitment agencies play a vital role in connecting job seekers with employers. They specialize in sourcing, screening, and matching candidates to job openings. Implementing Cognitive AI can revolutionize their operations and enhance their efficiency and effectiveness.",
+    "outro": "Cognitive AI can be a game-changer for recruitment agencies, offering benefits like improved candidate matching, faster screening processes, and reduced manual work. By embracing AI, these agencies can stay competitive in a rapidly evolving job market.",
+    "images": [
+        {
+            "thumbnail": "'ES_P001.mov",
+            "iuri": "image0001.jpg",
+            "title": "How Recruitment Agencies Work",
+            "description": "Recruitment agencies source and assess candidates for employers. They maintain a database of job seekers and job openings. When a suitable match is found, they facilitate the hiring process.",
+            "vuri": "'ES_P001.mov",
+            "duration": 0.40
+        },
+        {
+            "thumbnail": "'ES_P001.mov",
+            "iuri": "image0002.jpg",
+            "title": "Unique Selling Points (USP)",
+            "description": "Recruitment agencies offer expertise in candidate selection, access to a wide talent pool, and industry-specific knowledge. They streamline the hiring process for employers.",
+            "vuri": "'ES_P001.mov",
+            "duration": 0.40
+        },
+        {
+            "thumbnail": "'ES_P001.mov",
+            "iuri": "image0003.jpg",
+            "title": "Monetization Plan",
+            "description": "Recruitment agencies typically charge fees to employers based on successful placements. They may also offer premium services like executive search.",
+            "vuri": "'ES_P001.mov",
+            "duration": 0.40
+        },
+        {
+            "thumbnail": "'ES_P001.mov",
+            "iuri": "image0004.jpg",
+            "title": "How Cognitive AI Reduces Costs",
+            "description": "Cognitive AI can automate candidate matching, resume screening, and initial candidate assessments. This reduces manual work, speeds up the hiring process, and lowers operational costs.",
+            "vuri": "'ES_P001.mov",
+            "duration": 0.40
+        },
+        {
+            "thumbnail": "'ES_P001.mov",
+            "iuri": "image0005.jpg",
+            "title": "Benefits of Embracing Cognitive AI",
+            "description": "By adopting AI, recruitment agencies can provide faster and more accurate services to clients. They can focus on higher-value tasks while AI handles repetitive work.",
+            "vuri": "'ES_P001.mov",
+            "duration": 0.40
+        },
+        {
+            "thumbnail": "'ES_P001.mov",
+            "iuri": "image0003.jpg",
+            "title": "/cognitive-automation/public/videos/spn.idle.mov",
+            "description": "/cognitive-automation/public/videos/spn.idle.mov",
+            "vuri": "/cognitive-automation/public/videos/spn.idle.mov",
+            "duration": 0.05
+        }
+    ]
+}

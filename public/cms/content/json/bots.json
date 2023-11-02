@@ -1,0 +1,18 @@
+{
+    "Article_id": "0901901",
+    "Article_name": "CognitiveBots",
+    "intro": "ChatGPT to populate roles of individuals who can be extented themselves as cognitive bots, so that these individuals can have multi instances and serve multiple accounts/projects/organizatons",
+    "bots": [
+        {
+            "call_name": "spn",
+            "gender": "",
+            "iuri": "image0001.jpg", 
+            "role": "Cognitive Co-ordinator",
+            "expertise": "ChatGPT to populate appropriate details based on role",
+            "tasks":"ChatGPT to populate appropriate details based on expertise",
+            "vuri": "/cognitive-automation/public/videos/spn.idle.mov",
+            "experience": "ChatGPT to populate appropriate years of experience typically required based on the role",
+            "duration": 0.0
+        }
+    ]
+}

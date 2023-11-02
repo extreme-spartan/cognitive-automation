@@ -561,6 +561,52 @@ label {
             text-decoration: none;
             cursor: pointer;
         }
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.carousel-button-n {
+  position: absolute;
+  top: 0%;
+  right: 0px;
+  transform: translateY(50%);
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 2px 2px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.carousel-button-p {
+  position: absolute;
+  top: 0%;
+  left: 0px;
+  transform: translateY(50%);
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 2px 2px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carousel-button:hover {
+  background: #0056b3;
+}
   </style>
 </head>
 <body>
@@ -622,8 +668,37 @@ label {
                   <div id="WhenNotAuthenticated" class="hideOnStartup"><br><br> You're not authenticated :(</div>
                   <!-- <div id="WhenNotAuthenticated" class="hideOnStartup"><br><br> Not Authenticated :( </div> -->
                     <img id="usrImg" src="" class="responsive">
+                    <div class="carousel-container">
+                      <div class="carousel">
+                        <div class="carousel-slide">
+                          <!-- Insert the video and content for each person here -->
+                          <label><input type="checkbox" class="checkbox" value="CEO & Chief Architect"> CEO & Chief Architect </label>
+                        </div>
+                        <div class="carousel-slide">
+                          <!-- Insert the video and content for the second person here -->
+                          <label><input type="checkbox" class="checkbox" value="Enterprise Architect"> Enterprise Architect </label>
+                        </div>
+                        <div class="carousel-slide">
+                          <!-- Insert the video and content for each person here -->
+                          <label><input type="checkbox" class="checkbox" value="SRE Leader"> SRE Leader </label>
+                        </div>
+                        <div class="carousel-slide">
+                          <label><input type="checkbox" class="checkbox" value="Chief Fire Officer"> Chief Fire Officer </label>
+                        </div>
+                        <div class="carousel-slide">
+                          <label><input type="checkbox" class="checkbox" value="President"> President </label>
+                        </div>
+                        <div class="carousel-slide">
+                          <label><input type="checkbox" class="checkbox" value="Project Manager"> Project Manager </label>
+                        </div>
+                        <!-- Repeat the above div for each person in the table -->
+                      </div>
+                      <button class="carousel-button-p prev">Prev</button>
+                      <button class="carousel-button-n next">Next</button>
+                    </div>
+                    
                     <div class="video-container">
-                      <video id="usrVideo"  playsinline loop poster="" style='display: none;'> <!-- ./public/images/thumbnail.jpeg-->
+                      <video id="usrVideo"  playsinline poster="" style='display: none;'> <!-- ./public/images/thumbnail.jpeg-->
                         <source id="mp4_src" src="" type="video/mp4">
                               Your browser does not support HTML5 video.
                       </video>
@@ -635,6 +710,7 @@ label {
                         </div>
                       <!-- </div> -->
                     </div>  
+                    
                     <div class="_3NF-ok9QLIxL_8hJP-wqln flex-column">
                       <div class="_3me6Qx7Oc-d8q01pJiZkW-">
                         <span>
@@ -730,6 +806,11 @@ label {
       </div>
     </div> <!-- col-sm-3 -->
     <div class="col-sm-9">
+      <div id="chat-container">
+        <div id="chat-history"></div>
+        <!-- <input type="text" id="user-input" placeholder="Type your message..."> -->
+        <!-- <button onclick="sendMessage()">Send</button> -->
+      </div>
       <section class="sound-clips">
       
       
