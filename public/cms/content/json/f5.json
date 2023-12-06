@@ -1,14 +1,16 @@
 {
     "Article_id": "0901901",
     "Article_name": "SPN Intro",
-    "intro": "Hi, I am Alice! I am an Senior Project Manager with 15 years of exexpreience in managing projects for AeroSpace and Defense, Banking and Insurance, and internal IT programs. You know how to reach me! Chao!!",
+    "intro": "Hello there! Thanks for dropping by. Isn't it a beautiful day?. You can get started by typing the options in the below menu:",
     "images": [
         {
-            "thumbnail": "",
-            "iuri": "image0001.jpg",
-            "title": "Getting Started",
-            "description": "You can get started by typing,\n 1. 'intro' to get an intro of SPN.\n 2. 'aaas' to understand the offering Austomation as a Service.\n 3. 'join event' to join any upcoming event/meeting.\n 4. 'incident report' to bring up the daily incident chart, and then type 'start sod' to start the SoD.\n 5. 'canvas' to get into creative programming, type 'canvas' again to get back to workbench view.\n\nGood Luck and Have a wonderful time.",
-            "vuri": "/cognitive-automation/public/videos/spn.idle.mov",
+            "thumbnail": "101",
+            "intro": "Hello there! Thanks for dropping by. Isn't it a beautiful day?. You can get started by typing the options in the below menu:",
+            "options": [{"thumbnail": "001","vuri": "spn.json"},{"thumbnail": "002","vuri": "bots.json"},{"thumbnail": "003","vuri": "events.json"},{"thumbnail": "004","vuri": "cwb.json"},{"thumbnail": "005","vuri": "aaas.json"}],
+            "iuri": "/cognitive-automation/public/images/spn.jpeg",
+            "title": "SPN",
+            "description": " '001' to get an intro of SPN.\n '002' to understand the offering Automation as a Service.\n '003' to join any upcoming event/meeting.\n '004' to learn about the Cognitive AI Workbench.\n\nClick on Button:'Next' to see other roles. Good Luck and Have a wonderful time.",
+            "vuri": "/cognitive-automation/public/videos/spn.idle.mp4",
             "duration": 0.0
         }
     ]

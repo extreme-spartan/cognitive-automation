@@ -1,0 +1,56 @@
+{
+    "Article_id": "0901901",
+    "Article_name": "SPN Intro",
+    "intro": "",
+    "outro": "Thank you for taking the time to get to know us better. If you are as passionate about fire safety and emergency response as we are, please proceed with your questions to our President who is on call, we look forward to your questions and excited to share this exciting journey with you.",
+    "images": [
+        {
+            "thumbnail": "",
+            "iuri": "image001",
+            "title": "Emmanuel Ebo Budu-Mensah - Introduction",
+            "description": "I am Emmanuel Ebo Budu-Mensah, and I am honored to introduce myself to you. I proudly serve as the President of Perfect Care Institute of Fire & Safety Engineering, a prestigious educational institution located in the vibrant city of Accra, Ghana. At Perfect Care Institute, we are dedicated to providing top-notch training in the field of fire safety engineering, emergency response, and disaster management.",
+            "vuri": "/cognitive-automation/public/videos/ebb.intro.001.mp4",
+            "duration": 0.30
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image001",
+            "title": "Commitment to Excellence",
+            "description": "Our commitment to excellence is evident in the state-of-the-art facilities we have meticulously developed to empower our students with a comprehensive understanding of these critical disciplines. With a team of experienced trainers by my side, we have created an environment that nurtures learning, skill development, and real-world preparedness.",
+            "vuri": "/cognitive-automation/public/audio/emmanuel02.ogg",
+            "duration": 0.30
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image001",
+            "title": "Primary Goal",
+            "description": "Our primary goal is to produce graduates who stand out in the competitive landscape, making them highly sought after by employers in the fire safety and emergency response sectors. We firmly believe that education should not only be academically enriching but also practically beneficial. It's this belief that drives us to equip our students with not only theoretical knowledge but also hands-on experience.",
+            "vuri": "/cognitive-automation/public/audio/emmanuel03.ogg",
+            "duration": 0.30
+        },
+        {
+            "thumbnail": "",
+            "iuri": "image001",
+            "title": "Significance of Fire Safety",
+            "description": "We understand the significance of fire safety and emergency response in today's world, and we are passionate about molding the future professionals who will make a difference in these crucial fields. The safety and well-being of our communities depend on the knowledge and skills of dedicated individuals, and we are committed to shaping the next generation of experts.",
+            "vuri": "/cognitive-automation/public/audio/emmanuel04.ogg",
+            "duration": 0.30
+        },        
+        {
+            "thumbnail": "",
+            "iuri": "image001",
+            "title": "Primary Goal",
+            "description": "Our journey at Perfect Care Institute is marked by continuous learning, innovation, and unwavering dedication to our students' success. We take immense pride in what we do, and we welcome you to be part of our educational family.",
+            "vuri": "/cognitive-automation/public/audio/emmanuel05.ogg",
+            "duration": 0.30
+        },      
+        {
+            "thumbnail": "",
+            "iuri": "image001",
+            "title": "",
+            "description": "",
+            "vuri": "/cognitive-automation/public/videos/ebb.idle.mp4",
+            "duration": 0.05
+        }
+    ]
+}

@@ -7,14 +7,6 @@
         {
             "thumbnail": "",
             "iuri": "image0001.jpg",
-            "title": "Sridhar P Naidu - Introduction",
-            "description": "Hello there! I'm Sridhar P Naidu, the CEO and Chief Architect of Extreme-Spartan Cognitive Solutions. It's great to meet you! As an innovator at heart, my mission is to provide cutting-edge solutions to industries across the world. Our startup offers Automation as a Service products for both IaaS and SaaS consuming industries. We're all about helping businesses reduce their overall operations and business expenses by a whopping fifty percent! It's an exciting journey, and I'm thrilled to be leading the charge.",
-            "vuri": "/cognitive-automation/public/videos/spn.self.aas.cwb.mov",
-            "duration": 0.36
-        },
-        {
-            "thumbnail": "",
-            "iuri": "image0001.jpg",
             "title": "ESCAPE - Automation as a Service",
             "description": "Automation as a Service Application Solution.",
             "vuri": "/cognitive-automation/public/videos/spn10001AaaS-01.mov",
@@ -22,7 +14,7 @@
         },
         {
             "thumbnail": "",
-            "iuri": "image0001.jpg",
+            "iuri": "image0002.jpg",
             "title": "ESCAPE - Automation as a Service",
             "description": "Automation as a Service - Component Details",
             "vuri": "/cognitive-automation/public/videos/spn10001AaaS-02.mov",
@@ -30,7 +22,7 @@
         },
         {
             "thumbnail": "",
-            "iuri": "image0001.jpg",
+            "iuri": "image0003.jpg",
             "title": "ESCAPE - Automation as a Service",
             "description": "Automation as a Service - For fire Egineering and Safety",
             "vuri": "/cognitive-automation/public/videos/spn10001AaaS-03.mov",
@@ -38,7 +30,7 @@
         },
         {
             "thumbnail": "",
-            "iuri": "image0003.jpg",
+            "iuri": "image0004.jpg",
             "title": "",
             "description": "",
             "vuri": "/cognitive-automation/public/videos/spn.idle.mov",

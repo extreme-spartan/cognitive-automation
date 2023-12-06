@@ -1,14 +1,16 @@
 {
     "Article_id": "0901901",
-    "Article_name": "SPN Intro",
-    "intro": "Hi, I am Jason! I am an Enterprise Architect and can help you putting a technology roadmap for you and your organization?. Let me know when you are ready to get started!!",
+    "Article_name": "EEB Intro",
+    "intro": "Hello, Introducing our new Partner, Mr.Emmanuel Ebo Budu-Mensah, the President of Perfect Care Institute of Fire & Safety Engineering. Welcome Aboard!!",
     "images": [
         {
-            "thumbnail": "",
-            "iuri": "image0001.jpg",
-            "title": "Getting Started",
-            "description": "You can get started by typing,\n 1. 'intro' to get an intro of SPN.\n 2. 'aaas' to understand the offering Austomation as a Service.\n 3. 'join event' to join any upcoming event/meeting.\n 4. 'incident report' to bring up the daily incident chart, and then type 'start sod' to start the SoD.\n 5. 'canvas' to get into creative programming, type 'canvas' again to get back to workbench view.\n\nGood Luck and Have a wonderful time.",
-            "vuri": "/cognitive-automation/public/videos/spn.idle.mov",
+            "thumbnail": "intro",
+            "intro": "Hello, Introducing our new Partner, Mr.Emmanuel Ebo Budu-Mensah, the President of Perfect Care Institute of Fire & Safety Engineering. Welcome Aboard!!",
+            "options": [{"thumbnail": "401","vuri": "ebb.json"},{"thumbnail": "402","vuri": "pci.json"}],
+            "iuri": "./public/images/emmanuel.jpeg",
+            "title": "Mr.Emmanuel Ebo Budu-Mensah",
+            "description": "You can get started by typing,\n 1. '401' to get an intro of Mr.Emmanuel Ebo Budu-Mensah.\n\nGood Luck and Have a wonderful time.",
+            "vuri": "/cognitive-automation/public/videos/ebb.idle.mp4",
             "duration": 0.0
         }
     ]

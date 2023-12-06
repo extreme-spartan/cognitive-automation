@@ -1,17 +1,115 @@
 {
     "Article_id": "0901901",
     "Article_name": "CognitiveBots",
-    "intro": "ChatGPT to populate roles of individuals who can be extented themselves as cognitive bots, so that these individuals can have multi instances and serve multiple accounts/projects/organizatons",
+    "intro": "Welcome to the CognitiveBots platform. We've identified a wide range of professional job roles that can be extended as cognitive bots. This innovation allows individuals to have multiple instances and serve various accounts, projects, and organizations effectively, optimizing their productivity and offering tremendous benefits to both individuals and organizations.",
     "bots": [
         {
-            "call_name": "spn",
-            "gender": "",
-            "iuri": "image0001.jpg", 
-            "role": "Cognitive Co-ordinator",
-            "expertise": "ChatGPT to populate appropriate details based on role",
-            "tasks":"ChatGPT to populate appropriate details based on expertise",
+            "thumbnail": "101",
+            "callName": "SPN",
+            "intro": "Hello there! Thanks for dropping by. Isn't it a beautiful day?. You can get started by typing the options in the below menu:",
+            "options": [{"thumbnail": "001","vuri": "spn.json"},{"thumbnail": "002","vuri": "aaas.json"},{"thumbnail": "003","vuri": "events.json"},{"thumbnail": "004","vuri": "cwb.json"},{"thumbnail": "005","vuri": "aaas.json"}],
+            "iuri": "./public/images/jason.jpeg",
+            "role": "CEO & Chief Architect",
+            "description": " '001' to get an intro of SPN.\n '002' to understand the offering Automation as a Service.\n '003' to join any upcoming event/meeting.\n '004' to learn about the Cognitive AI Workbench.\n\nClick on Button:'Next' to see other roles. Good Luck and Have a wonderful time.",
+            "vuri": "/cognitive-automation/public/videos/spn.idle.mp4",
+            "duration": 0.0
+        },
+        {
+            "thumbnail": "102",
+            "callName": "SPN",
+            "intro": "Welcome to the CognitiveBots platform. We've identified a wide range of professional job roles that can be extended as cognitive bots. This innovation allows individuals to have multiple instances and serve various accounts, projects, and organizations effectively, optimizing their productivity and offering tremendous benefits to both individuals and organizations.",
+            "options": [{"thumbnail": "001","vuri": "spn.json"},{"thumbnail": "002","vuri": "aaas.json"},{"thumbnail": "003","vuri": "events.json"},{"thumbnail": "004","vuri": "cwb.json"},{"thumbnail": "005","vuri": "aaas.json"}],
+            "iuri": "./public/images/jason.jpeg",
+            "role": "Storage Architect",
+            "description": "Menu Options:\n '101' to get an intro of Jason.\n '102' to learn and understand what Storage Architects do.\n '103' to view anyupcoming or past trainings conducted.\n '104' to deploy Jason at your Organization.\n\nGood Luck and Have a wonderful time.",
+            "vuri": "jason.json",
+            "duration": 0.0
+        },
+        {
+            "thumbnail": "103",
+            "callName": "SPN",
+            "intro": "Hello, Mr.Sridhar P Naidu! by experience is a seasoned Enterprise Architect but in his current role he is designated as The Client Transformation Leader heading the Site Reliability Engineering team For European Accounts. If you are interested in reducing your enetrprise operational expenses? then you are at the right place, see below to learn how to get started!!",
+            "options": [{"thumbnail": "001","vuri": "spn.json"},{"thumbnail": "002","vuri": "aaas.json"},{"thumbnail": "003","vuri": "events.json"},{"thumbnail": "004","vuri": "cwb.json"},{"thumbnail": "005","vuri": "aaas.json"}],
+            "iuri": "./public/images/spn.jpeg",
+            "role": "SRE Leader",
+            "description": "You can get started by typing,\n 1. '201' to get an intro of SRE's.\n 2. 'aaas' to understand the offering Austomation as a Service.\n 3. 'join event' to join any upcoming event/meeting.\n 4. 'incident report' to bring up the daily incident chart, and then type 'start sod' to start the SoD.\n 5. 'canvas' to get into creative programming, type 'canvas' again to get back to workbench view.\n\nGood Luck and Have a wonderful time.",
+            "vuri": "abc.json",
+            "duration": 0.0
+        },
+        {
+            "thumbnail": "104",
+            "callName": "SPN",
+            "intro": "Hello, it is my pleasure to indroduce you to Mr.Erphan Desai. See my ways of working below: ",
+            "options": [{"thumbnail": "101","vuri": "escape101.json"},{"thumbnail": "102","vuri": "aaas.json"},{"thumbnail": "103","vuri": "events.json"}],
+            "iuri": "./public/images/esd.jpeg",
+            "role": "Chief Fire Auditor",
+            "description": "You can get started by typing,\n '301' to get an intro of Erphan Desai.\n '302' to understand the offering Austomation as a Service.\n '303' to join any upcoming event/meeting.\n\nGood Luck and Have a wonderful time.",
             "vuri": "/cognitive-automation/public/videos/spn.idle.mov",
-            "experience": "ChatGPT to populate appropriate years of experience typically required based on the role",
+            "duration": 0.0
+        },
+        {
+            "thumbnail": "105",
+            "callName": "SPN",
+            "intro": "Hello, Introducing our new Partner, Mr.Emmanuel Ebo Budu-Mensah, the President of Perfect Care Institute of Fire & Safety Engineering. Welcome Aboard!!",
+            "options": [{"thumbnail": "401","vuri": "ebb.json"},{"thumbnail": "402","vuri": "pci.json"}],
+            "iuri": "./public/images/emmanuel.jpeg",
+            "role": "President",
+            "description": "You can get started by typing,\n 1. '401' to get an intro of Mr.Emmanuel Ebo Budu-Mensah.\n\nGood Luck and Have a wonderful time.",
+            "vuri": "cwb.json",
+            "duration": 0.0
+        },
+        {
+            "thumbnail": "106",
+            "callName": "SPN",
+            "intro": "Hello there! Thanks for dropping by. Isn't it a beautiful day?. You can get started by typing the options in the below menu:",
+            "options": [{"thumbnail": "001","vuri": "spn.json"},{"thumbnail": "002","vuri": "aaas.json"},{"thumbnail": "003","vuri": "events.json"},{"thumbnail": "004","vuri": "cwb.json"},{"thumbnail": "005","vuri": "aaas.json"}],
+            "iuri": "./public/images/naz.jpeg",
+            "role": "Zee",
+            "description": " '001' to get an intro of SPN.\n '002' to understand the offering Automation as a Service.\n '003' to join any upcoming event/meeting.\n '004' to learn about the Cognitive AI Workbench.\n\nClick on Button:'Next' to see other roles. Good Luck and Have a wonderful time.",
+            "vuri": "spn.json",
+            "duration": 0.0
+        },
+        {
+            "thumbnail": "107",
+            "callName": "SPN",
+            "intro": "",
+            "options": [{"thumbnail": "001","vuri": "spn.json"},{"thumbnail": "002","vuri": "aaas.json"},{"thumbnail": "003","vuri": "events.json"},{"thumbnail": "004","vuri": "cwb.json"},{"thumbnail": "005","vuri": "aaas.json"}],
+            "iuri": "./public/images/naidu.jpeg",
+            "role": "Fashion Designer/Model",
+            "description": " '001' to get an intro of SPN.\n '002' to understand the offering Automation as a Service.\n '003' to join any upcoming event/meeting.\n '004' to learn about the Cognitive AI Workbench.\n\nClick on Button:'Next' to see other roles. Good Luck and Have a wonderful time.",
+            "vuri": "spn.json",
+            "duration": 0.0
+        },
+        {
+            "thumbnail": "108",
+            "callName": "SPN",
+            "intro": "",
+            "options": [{"thumbnail": "001","vuri": "spn.json"},{"thumbnail": "002","vuri": "aaas.json"},{"thumbnail": "003","vuri": "events.json"},{"thumbnail": "004","vuri": "cwb.json"},{"thumbnail": "005","vuri": "aaas.json"}],
+            "iuri": "./public/images/tina.jpeg",
+            "role": "Jewllery Designer",
+            "description": " '001' to get an intro of SPN.\n '002' to understand the offering Automation as a Service.\n '003' to join any upcoming event/meeting.\n '004' to learn about the Cognitive AI Workbench.\n\nClick on Button:'Next' to see other roles. Good Luck and Have a wonderful time.",
+            "vuri": "spn.json",
+            "duration": 0.0
+        },
+        {
+            "thumbnail": "109",
+            "callName": "SPN",
+            "intro": "Hello there! Thanks for dropping by. Isn't it a beautiful day?. You can get started by typing the options in the below menu:",
+            "options": [{"thumbnail": "001","vuri": "spn.json"},{"thumbnail": "002","vuri": "aaas.json"},{"thumbnail": "003","vuri": "events.json"},{"thumbnail": "004","vuri": "cwb.json"},{"thumbnail": "005","vuri": "aaas.json"}],
+            "iuri": "./public/images/mrinal.jpeg",
+            "role": "Scuba Tutor",
+            "description": " '001' to get an intro of SPN.\n '002' to understand the offering Automation as a Service.\n '003' to join any upcoming event/meeting.\n '004' to learn about the Cognitive AI Workbench.\n\nClick on Button:'Next' to see other roles. Good Luck and Have a wonderful time.",
+            "vuri": "spn.json",
+            "duration": 0.0
+        },
+        {
+            "thumbnail": "110",
+            "callName": "SPN",
+            "intro": "Hi, this is Alice, an Senior Project Manager with 15 years of exexpreience in managing projects for AeroSpace and Defense, Banking and Insurance, and various internal IT programs. You can check her expertise by typing the menu options below! Chao!!",
+            "iuri": "./public/images/alice.jpeg",
+            "role": "Alice",
+            "description": "You can get started by typing,\n '501' to get an intro of Alice.\n '502' understand the offering Austomation as a Service.\n '503' to join any upcoming event/meeting.\n '504' to bring up the daily incident chart, and then type 'start sod' to start the SoD.\n\nGood Luck and Have a wonderful time.",
+            "vuri": "alice.json",
             "duration": 0.0
         }
     ]

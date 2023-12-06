@@ -1,0 +1,17 @@
+{
+    "Article_id": "0901901",
+    "Article_name": "SPN Intro",
+    "intro": "Hi, this is Aniro, a model by profession who also design's and runs her own clothing brand..",
+    "images": [
+        {
+            "thumbnail": "105",
+            "intro": "Hi, this is Alice, an Senior Project Manager with 15 years of exexpreience in managing projects for AeroSpace and Defense, Banking and Insurance, and various internal IT programs. You can check her expertise by typing the menu options below! Chao!!",
+            "options": [{"thumbnail": "001","vuri": "spn.json"},{"thumbnail": "002","vuri": "aaas.json"},{"thumbnail": "003","vuri": "events.json"},{"thumbnail": "004","vuri": "cwb.json"},{"thumbnail": "005","vuri": "aaas.json"}],
+            "iuri": "./public/images/aniro.jpeg",
+            "title": "Ms.Aniro",
+            "description": "You can get started by typing,\n '501' to get an intro of Alice.\n '502' understand the offering Austomation as a Service.\n '503' to join any upcoming event/meeting.\n '504' to bring up the daily incident chart, and then type 'start sod' to start the SoD.\n\nGood Luck and Have a wonderful time.",
+            "vuri": "/cognitive-automation/public/videos/aniro.idle.mp4",
+            "duration": 0.0
+        }
+    ]
+}

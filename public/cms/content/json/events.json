@@ -6,7 +6,7 @@
     "images": [
         {
             "thumbnail": "101",
-            "iuri": "image0001.jpg",
+            "iuri": "./public/images/saisridhar.jpeg",
             "title": "Eureka - Automation as a Service for Fire Engineering",
             "description": "Meeting Id: 101 \n\nPlease type the article/meeting/event id and press enter or click on the send button",
             "vuri": "escape101.json",
@@ -81,7 +81,7 @@
             "iuri": "image0003.jpg",
             "title": "",
             "description": "",
-            "vuri": "/cognitive-automation/public/videos/spn.idle.mov",
+            "vuri": "/cognitive-automation/public/videos/sridhar.idle.mp4",
             "duration": 0.05
         }
     ]

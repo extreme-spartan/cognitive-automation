@@ -10,7 +10,7 @@
             "title": "Extreme-Spartan Cognitive Workbench",
             "description": "At Extreme-Spartan Cognitive Solutions, we offer a powerful tool called the Cognitive AI Workbench. This workbench is designed to provide organizations with a subscription-based platform to create cognitive forms and cognitive charts. The Cognitive AI Workbench allows users to easily build intelligent forms that can understand and interpret data, enabling them to automate complex processes and enhance productivity. With its intuitive interface and advanced machine learning capabilities, users can create forms that extract meaningful information from unstructured data, making data processing more efficient and accurate. In addition, the Cognitive AI Workbench also enables users to create cognitive charts. These charts leverage artificial intelligence and natural language processing to analyze and visualize data, helping organizations gain valuable insights and make data-driven decisions.",
             "vuri": "/cognitive-automation/public/videos/cwb-001.mov",
-            "duration": 0.56
+            "duration": 0.59
         },
         {
             "thumbnail": "",
@@ -20,13 +20,12 @@
             "vuri": "/cognitive-automation/public/videos/cwb-002.mov",
             "duration": 1.19
         },
-        
         {
             "thumbnail": "",
             "iuri": "image0003.jpg",
             "title": "",
             "description": "",
-            "vuri": "/cognitive-automation/public/videos/spn.idle.mov",
+            "vuri": "/cognitive-automation/public/videos/spn.idle.mp4",
             "duration": 0.05
         }
     ]

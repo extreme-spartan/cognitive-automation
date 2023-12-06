@@ -5,6 +5,8 @@
   <title>ExtremeSpartan - Cognitive Automation</title>
     <!-- Latest compiled and minified CSS -->
   <!-- <link href="./scripts/widget-5d9a4e95309cd5de5d5b-prod.css" rel="stylesheet"> -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -14,10 +16,11 @@
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
-
+  
   <!-- <script src="./public/libraries/p5.js" type="text/javascript"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js" integrity="sha512-bcfltY+lNLlNxz38yBBm/HLaUB1gTV6I0e+fahbF9pS6roIdzUytozWdnFV8ZnM6cSAG5EbmO0ag0a/fLZSG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
   <script src="./public/sketch.js" type="text/javascript"></script>
   <script src="https://cdn.socket.io/socket.io-1.4.5.js" type="text/javascript"></script> 
    <script>
@@ -607,6 +610,15 @@ label {
 .carousel-button:hover {
   background: #0056b3;
 }
+        /* Add some basic styling for the icon */
+        .speaker-icon {
+            cursor: pointer;
+            padding: 5px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
   </style>
 </head>
 <body>
@@ -662,21 +674,27 @@ label {
       <div id="drift-widget-container" style="position: absolute; z-index: 7;">
         <div id="mydiv" style="border: none; display: block; height: 220px !important; width: 300px !important; position: fixed; top: auto; left: auto; top: 4%; right: 0px; visibility: visible; z-index: 2147483647; max-height: 100vh; max-width: 100vw; transition: none; background: none transparent; opacity: 1;">
           <!-- <div class="sidenav"> -->
-
               <div class="flex-center">
                 <div class="flex-column flex-1">
                   <div id="WhenNotAuthenticated" class="hideOnStartup"><br><br> You're not authenticated :(</div>
                   <!-- <div id="WhenNotAuthenticated" class="hideOnStartup"><br><br> Not Authenticated :( </div> -->
-                    <img id="usrImg" src="" class="responsive">
+                  <img id="usrImg" src="" class="responsive">
+                  <div class="video-container">
+                    <video id="usrVideo"  playsinline poster="https://cdn2.veltra.com/ptr/20180427105257_558150640_10498_0.jpg" style='display: block;'> <!-- ./public/images/thumbnail.jpeg-->
+                      <source id="mp4_src" src="" type="video/mp4" width="300px">
+                            Your browser does not support HTML5 video.
+                    </video>
+                  </div>
                     <div class="carousel-container">
                       <div class="carousel">
                         <div class="carousel-slide">
                           <!-- Insert the video and content for each person here -->
-                          <label><input type="checkbox" class="checkbox" value="CEO & Chief Architect"> CEO & Chief Architect </label>
+                          <!-- <label> CEO & Chief Architect </label> -->
+                          <label id="vdolbl"></label>
                         </div>
                         <div class="carousel-slide">
                           <!-- Insert the video and content for the second person here -->
-                          <label><input type="checkbox" class="checkbox" value="Enterprise Architect"> Enterprise Architect </label>
+                          <label><input type="checkbox" class="checkbox" value="2"> Life Coach </label>
                         </div>
                         <div class="carousel-slide">
                           <!-- Insert the video and content for each person here -->
@@ -689,28 +707,34 @@ label {
                           <label><input type="checkbox" class="checkbox" value="President"> President </label>
                         </div>
                         <div class="carousel-slide">
-                          <label><input type="checkbox" class="checkbox" value="Project Manager"> Project Manager </label>
+                          <label><input type="checkbox" class="checkbox" value="Project Manager"> CEO & Chief Architect </label>
+                        </div>
+                        <div class="carousel-slide">
+                          <!-- Insert the video and content for the second person here -->
+                          <label><input type="checkbox" class="checkbox" value="2"> Project Manager </label>
+                        </div>
+                        <div class="carousel-slide">
+                          <!-- Insert the video and content for each person here -->
+                          <label><input type="checkbox" class="checkbox" value="Bollywood Trainer"> Jewellery Designer </label>
+                        </div>
+                        <div class="carousel-slide">
+                          <label><input type="checkbox" class="checkbox" value="Model & Designer"> Model & Designer </label>
+                        </div>
+                        <div class="carousel-slide">
+                          <label><input type="checkbox" class="checkbox" value="Bollywood Trainer"> Bollywood Trainer </label>
+                        </div>
+                        <div class="carousel-slide">
+                          <label><input type="checkbox" class="checkbox" value="Project Manager"> Swimming Trainer </label>
                         </div>
                         <!-- Repeat the above div for each person in the table -->
                       </div>
                       <button class="carousel-button-p prev">Prev</button>
                       <button class="carousel-button-n next">Next</button>
                     </div>
-                    
-                    <div class="video-container">
-                      <video id="usrVideo"  playsinline poster="" style='display: none;'> <!-- ./public/images/thumbnail.jpeg-->
-                        <source id="mp4_src" src="" type="video/mp4">
-                              Your browser does not support HTML5 video.
-                      </video>
-                      
-                      <!-- <div class="overlay" style='display: block;'> -->
-                        <div id="history_area" class="responsive" style='display: block;'>
-                          <textarea readonly class="form-control" id="historyArea" style="color:#777;background-color:transparent;border:1px solid #ddd;font-size:12px;width:100%;height:115px;resize:none;overflow-y:scroll;">
-                          </textarea>                         
-                        </div>
-                      <!-- </div> -->
-                    </div>  
-                    
+                    <div id="history_area" class="responsive" style="display: none;">
+                      <textarea readonly class="form-control" id="historyArea" style="color:#777;background-color:transparent;border:1px solid #ddd;font-size:12px;width:100%;height:115px;resize:none;overflow-y:scroll;">
+                      </textarea>                         
+                    </div>
                     <div class="_3NF-ok9QLIxL_8hJP-wqln flex-column">
                       <div class="_3me6Qx7Oc-d8q01pJiZkW-">
                         <span>
@@ -837,7 +861,7 @@ label {
         </div> -->
 
         <img id="waitImg" class="responsive">
-        
+
         <div id="tcon"></div>
         <!-- <label for="toggle"></label> -->
         <input type="checkbox" id="toggle"> 
@@ -881,6 +905,12 @@ label {
     </div>
   </div>
 </div>
+<head>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    window.mermaid = mermaid;
+  </script>
+    
 <script src="./public/scripts/escape_js.js"></script>
 </body>
 

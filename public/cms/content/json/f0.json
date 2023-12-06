@@ -1,14 +1,36 @@
 {
     "Article_id": "0901901",
     "Article_name": "SPN Intro",
-    "intro": "Hello there! Thanks for dropping by. Isn't it a beautiful day? How can I help you?",
+    "intro": "Hey Hello there! Thanks for dropping by. Isn't it a beautiful day?. You can get started by typing the options in the below menu:",
     "images": [
         {
-            "thumbnail": "",
-            "iuri": "image0001.jpg",
-            "title": "Getting Started",
-            "description": "You can get started by typing,\n 1. 'intro' to get an intro of SPN.\n 2. 'aaas' to understand the offering Austomation as a Service.\n 3. 'join event' to join any upcoming event/meeting.\n 4. 'incident report' to bring up the daily incident chart, and then type 'start sod' to start the SoD.\n 5. 'canvas' to get into creative programming, type 'canvas' again to get back to workbench view.\n\nGood Luck and Have a wonderful time.",
-            "vuri": "/cognitive-automation/public/videos/spn.idle.mov",
+            "thumbnail": "101",
+            "intro": "Hello there! Thanks for dropping by. Isn't it a beautiful day?. You can get started by typing the options in the below menu:",
+            "options": [{"thumbnail": "001","vuri": "spn.json"},{"thumbnail": "002","vuri": "aaas.json"},{"thumbnail": "003","vuri": "events.json"},{"thumbnail": "004","vuri": "cwb.json"},{"thumbnail": "005","vuri": "aaas.json"}],
+            "iuri": "./public/images/saisridhar.jpeg",
+            "title": "CEO & Chief Architect",
+            "description": " '001' to get an intro of SPN.\n '002' to understand the offering Automation as a Service.\n '003' to join any upcoming event/meeting.\n '004' to learn about the Cognitive AI Workbench.\n\nClick on Button:'Next' to see other roles. Good Luck and Have a wonderful time.",
+            "vuri": "/cognitive-automation/public/videos/spn.idle.mp4",
+            "duration": 0.10
+        },
+        {
+            "thumbnail": "102",
+            "intro": "Enterprise Architect and he can help you putting up a technology roadmap for your organization?. You can get started by typing the menu options!!",
+            "options": [{"thumbnail": "101","vuri": "002.json"},{"thumbnail": "102","vuri": "aaas.json"},{"thumbnail": "103","vuri": "events.json"},{"thumbnail": "004","vuri": "cwb.json"},{"thumbnail": "005","vuri": "aaas.json"}],
+            "iuri": "./public/images/jason.jpeg",
+            "title": "Client Transformation Leader - SRE",
+            "description": "Menu Options:\n '101' to get an intro of Jason.\n '102' to learn and understand what Enterprise Architects do.\n '103' to view anyupcoming or past trainings conducted.\n '104' to deploy Jason at your Organization.\n\nGood Luck and Have a wonderful time.",
+            "vuri": "/cognitive-automation/public/videos/sridhar.idle.mp4",
+            "duration": 0.30
+        },
+        {
+            "thumbnail": "103",
+            "intro": "Hello, it is my pleasure to indroduce you to Mr.Erphan Desai. See my ways of working below: ",
+            "options": [{"thumbnail": "301","vuri": "escape101.json"},{"thumbnail": "302","vuri": "aaas.json"},{"thumbnail": "303","vuri": "events.json"}],
+            "iuri": "/cognitive-automation/public/images/esd.jpeg",
+            "title": "Lead Integration Architect - Watson AI & Data Analytics",
+            "description": "You can get started by typing,\n '301' to get an intro of Erphan Desai.\n '302' to understand the offering Austomation as a Service.\n '303' to join any upcoming event/meeting.\n\nGood Luck and Have a wonderful time.",
+            "vuri": "/cognitive-automation/public/videos/spnizen.idle.mp4",
             "duration": 0.0
         }
     ]

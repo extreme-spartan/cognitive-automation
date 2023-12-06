@@ -5,13 +5,13 @@
     "topics": [
 
         {
-            "pre-requiste learning": "suggest if any required",
+            "'pre-requiste learning'": "suggest if any required",
             "image_uri": "image0001.jpg",
             "title": "Introduction to AI Models",
             "description": "Let's begin by defining what AI models are and why they are essential in today's world.",
             "exercise_content": "Hello, and welcome to the 'Basics of AI Models' section. Artificial Intelligence models, often referred to as AI models, are at the core of AI technology. These models are computational systems designed to perform specific tasks by imitating human intelligence. They have become an integral part of various applications, from autonomous vehicles to healthcare. In this session, we'll explore the fundamental concepts of AI models and their wide-ranging significance.",
             "Test": "suggest if any required",
-            "":"",
+            "Summary":"We have learnt ...",
             "video_uri": "ES_P0001.mov",
             "duration": 0.30
         },

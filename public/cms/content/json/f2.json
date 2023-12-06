@@ -1,14 +1,16 @@
 {
     "Article_id": "0901901",
     "Article_name": "SPN Intro",
-    "intro": "Hi, I am Sridhar P Naidu! by experience I am a seasoned Enterprise Architect but in my current role I am the Client Transforation Leader - Site Reliability Engineering (For European Accounts). Can help you boost your organizations profits by reducing your operational expenses?. Take a look at my key achievements!!",
+    "intro": "Hello, Introducing Sridhar P Naidu! a seasoned Architect by profession but in his current role he is designated as The Client Transforation Leader heading the Site Reliability Engineering team For European Accounts. If you are in the game of reducing your enetrprise operational expenses? then you are at the right place, see below to learn how to get started!!",
     "images": [
         {
-            "thumbnail": "",
-            "iuri": "image0001.jpg",
-            "title": "Getting Started",
-            "description": "You can get started by typing,\n 1. 'intro' to get an intro of SPN.\n 2. 'aaas' to understand the offering Austomation as a Service.\n 3. 'join event' to join any upcoming event/meeting.\n 4. 'incident report' to bring up the daily incident chart, and then type 'start sod' to start the SoD.\n 5. 'canvas' to get into creative programming, type 'canvas' again to get back to workbench view.\n\nGood Luck and Have a wonderful time.",
-            "vuri": "/cognitive-automation/public/videos/spn.idle.mov",
+            "thumbnail": "intro",
+            "intro": "Hello, Introducing Sridhar P Naidu! a seasoned Architect by profession but in his current role he is designated as The Client Transforation Leader heading the Site Reliability Engineering team For European Accounts. If you are in the game of reducing your enetrprise operational expenses? then you are at the right place, see below to learn how to get started!!",
+            "options": [{"thumbnail": "201","vuri": "000.json"},{"thumbnail": "202","vuri": "aaas.json"},{"thumbnail": "203","vuri": "events.json"},{"thumbnail": "004","vuri": "cwb.json"},{"thumbnail": "005","vuri": "aaas.json"}],
+            "iuri": "./public/images/naidu.jpeg",
+            "title": "Mr.Sridhar P Naidu",
+            "description": "You can get started by typing,\n 1. '201' to get an intro of SRE's.\n 2. 'aaas' to understand the offering Austomation as a Service.\n 3. 'join event' to join any upcoming event/meeting.\n 4. 'incident report' to bring up the daily incident chart, and then type 'start sod' to start the SoD.\n 5. 'canvas' to get into creative programming, type 'canvas' again to get back to workbench view.\n\nGood Luck and Have a wonderful time.",
+            "vuri": "/cognitive-automation/public/videos/spnizen.idle.mp4",
             "duration": 0.0
         }
     ]
