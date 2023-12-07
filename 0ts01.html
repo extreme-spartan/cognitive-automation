@@ -29,7 +29,285 @@
   <div id="webcam-container"></div>
   <div id="label-container"></div>
   <script>
-const _0x198038=_0x17ed;(function(_0x3b04ce,_0x4d3435){const _0x1ec690=_0x17ed,_0x2ac60c=_0x3b04ce();while(!![]){try{const _0xa5b1a4=parseInt(_0x1ec690(0x159))/0x1+-parseInt(_0x1ec690(0x171))/0x2+parseInt(_0x1ec690(0x136))/0x3*(-parseInt(_0x1ec690(0x147))/0x4)+parseInt(_0x1ec690(0x149))/0x5*(-parseInt(_0x1ec690(0x14f))/0x6)+parseInt(_0x1ec690(0x135))/0x7*(parseInt(_0x1ec690(0x15c))/0x8)+parseInt(_0x1ec690(0x143))/0x9+parseInt(_0x1ec690(0x175))/0xa;if(_0xa5b1a4===_0x4d3435)break;else _0x2ac60c['push'](_0x2ac60c['shift']());}catch(_0x562784){_0x2ac60c['push'](_0x2ac60c['shift']());}}}(_0x269d,0x9dd3f));const URL=_0x198038(0x161);let model,webcam,labelContainer,maxPredictions,modelcc,cameras=[],currentCameraIndex=0x0,dFlg=![],announcementText='',detectionTime='';cocoSsd[_0x198038(0x173)]()[_0x198038(0x15d)](_0x327e08=>{const _0x147ef8=_0x198038;modelcc=_0x327e08,init(),navigator[_0x147ef8(0x157)][_0x147ef8(0x144)]()[_0x147ef8(0x15d)](_0x467fc3=>{const _0x110160=_0x147ef8;cameras=_0x467fc3[_0x110160(0x163)](_0x43109e=>_0x43109e[_0x110160(0x13c)]==='videoinput'),setupCameraSelector(cameras),startObjectDetection();});});function setupCameraSelector(_0x2e61b3){const _0xf607ef=_0x198038,_0x2ec941=document[_0xf607ef(0x139)](_0xf607ef(0x14c));_0x2e61b3['forEach']((_0x1b5e58,_0x3526d4)=>{const _0x2a100a=_0xf607ef,_0x424e80=document[_0x2a100a(0x168)](_0x2a100a(0x16e));_0x424e80['value']=_0x3526d4,_0x424e80[_0x2a100a(0x17b)]=_0x2a100a(0x16d)+(_0x3526d4+0x1),_0x2ec941[_0x2a100a(0x13a)](_0x424e80);}),_0x2ec941[_0xf607ef(0x13d)](_0xf607ef(0x179),()=>{const _0x181a52=_0xf607ef;currentCameraIndex=parseInt(_0x2ec941[_0x181a52(0x17c)],0xa),startObjectDetection();});}async function getVideoStream(_0x78e149){const _0x40f023=_0x198038,_0x2c2e13={'video':{'deviceId':cameras[_0x78e149][_0x40f023(0x14e)]}};return await navigator['mediaDevices'][_0x40f023(0x166)](_0x2c2e13);}async function detectObjects(_0x2fd30a,_0x546cd0,_0x964b17,_0x36b07f){const _0x2e0907=_0x198038,_0x20f385=_0x964b17[_0x2e0907(0x160)]('2d'),_0x20eeaf=_0x36b07f[_0x2e0907(0x160)]('2d');if(_0x2fd30a[_0x2e0907(0x134)]===_0x2fd30a[_0x2e0907(0x16f)]&&_0x546cd0&&model){_0x20f385[_0x2e0907(0x156)](_0x2fd30a,0x0,0x0,_0x964b17['width'],_0x964b17['height']),_0x20eeaf[_0x2e0907(0x156)](_0x2fd30a,0x0,0x0,_0x36b07f[_0x2e0907(0x131)],_0x36b07f['height']),_0x20eeaf[_0x2e0907(0x13f)]=_0x2e0907(0x16b),_0x20eeaf[_0x2e0907(0x178)]=_0x2e0907(0x155);const _0x58d06d=await _0x546cd0[_0x2e0907(0x158)](_0x964b17),_0x129b7a=await model[_0x2e0907(0x148)](_0x36b07f);let _0x37e0f2=[];announcementText='Fire\x20detected.\x20Location\x20is\x20basement\x20storage\x20area.\x20Source\x20Camera\x20number\x20is\x201.\x20OnDuty\x20Fire\x20Officers\x20to\x20act\x20as\x20per\x20the\x20steps\x20defined.';for(let _0x1d2d75=0x0;_0x1d2d75<maxPredictions;_0x1d2d75++){const _0x395b36=_0x129b7a[_0x1d2d75][_0x2e0907(0x165)]+':\x20'+_0x129b7a[_0x1d2d75]['probability'][_0x2e0907(0x15b)](0x2);labelContainer['childNodes'][_0x1d2d75][_0x2e0907(0x167)]=_0x395b36,_0x129b7a[_0x1d2d75][_0x2e0907(0x165)]==_0x2e0907(0x16c)&&_0x129b7a[_0x1d2d75][_0x2e0907(0x177)][_0x2e0907(0x15b)](0x2)>0.98&&(!dFlg&&(dFlg=!![],detectionTime=new Date()[_0x2e0907(0x174)](),console['log'](_0x2e0907(0x13e)+new Date()),_0x20eeaf[_0x2e0907(0x14a)](detectionTime,0xf,0x5),speak(announcementText),announcePeriodically()),_0x20eeaf[_0x2e0907(0x14a)](_0x2e0907(0x15f),0xf,0x19),_0x20eeaf['fillText'](_0x129b7a[_0x1d2d75][_0x2e0907(0x177)]['toFixed'](0x2),0xf,0x19),_0x20eeaf['fillText'](_0x2e0907(0x164),0xf,0x2d),_0x20eeaf[_0x2e0907(0x14a)](_0x2e0907(0x146),0xf,0x2d));}_0x58d06d[_0x2e0907(0x138)](_0x25ca03=>{const _0xa5d3f1=_0x2e0907,[_0x3bcdba,_0x1f5670,_0x16c763,_0x225ab1]=_0x25ca03[_0xa5d3f1(0x169)];_0x20f385[_0xa5d3f1(0x176)](),_0x20f385[_0xa5d3f1(0x15a)](_0x3bcdba,_0x1f5670,_0x16c763,_0x225ab1),_0x20f385['lineWidth']=0x2,_0x20f385['strokeStyle']='cyan',_0x20f385[_0xa5d3f1(0x178)]=_0xa5d3f1(0x155),_0x20f385[_0xa5d3f1(0x162)](),_0x20f385[_0xa5d3f1(0x13f)]=_0xa5d3f1(0x16b),_0x20f385[_0xa5d3f1(0x14a)](_0x25ca03[_0xa5d3f1(0x130)],_0x3bcdba+0x5,_0x1f5670+0xf);});const _0x4400bd=assessRisk(_0x58d06d);}}function announcePeriodically(){const _0x270aa9=_0x198038;if(dFlg){let _0x5a66e0=new Date()['getTime']();const _0xb8540d=(detectionTime-_0x5a66e0)/0x3e8;_0xb8540d<0x1?announcementText=_0x270aa9(0x153)+new Date()+_0x270aa9(0x16a)+currentCameraIndex:announcementText='Fire\x20detected\x20around\x20'+_0xb8540d+_0x270aa9(0x151),speak(announcementText),setTimeout(()=>{announcePeriodically();},0xea60);}}function onFireDetection(){const _0x7cfdd0=_0x198038;if(prediction[i][_0x7cfdd0(0x165)]==_0x7cfdd0(0x16c)&&prediction[i][_0x7cfdd0(0x177)][_0x7cfdd0(0x15b)](0x2)>0.98){context2[_0x7cfdd0(0x14a)](_0x7cfdd0(0x15f),0xf,0x19),context2[_0x7cfdd0(0x14a)](prediction[i][_0x7cfdd0(0x177)]['toFixed'](0x2),0xf,0x19),context2[_0x7cfdd0(0x14a)](_0x7cfdd0(0x152),0x19,0x19),context2[_0x7cfdd0(0x14a)](_0x7cfdd0(0x140),0x19,0x19);const _0xf69bad=new Date()[_0x7cfdd0(0x174)]();detectionTimestamps['push'](_0xf69bad);if(shouldAnnounceDetection()){const _0x58e954=(_0xf69bad-detectionTimestamps[0x0])/0x3e8;speak(_0x7cfdd0(0x14b)+_0x58e954[_0x7cfdd0(0x15b)](0x0)+_0x7cfdd0(0x14d));}}}function shouldAnnounceDetection(){const _0x1d1372=new Date()['getTime']();return _0x1d1372-detectionTimestamps[0x0]>=0x1d4c0;}function speak(_0x34ff15){const _0x553bb1=_0x198038,_0x5ce465=new SpeechSynthesisUtterance(_0x34ff15);window[_0x553bb1(0x17a)][_0x553bb1(0x13b)](_0x5ce465);}function assessRisk(_0x208302){return'High\x20Risk';}function downloadCanvas(){const _0x44206a=_0x198038,_0x1f4279=document['getElementById']('canvas1'),_0x95220c=document[_0x44206a(0x139)](_0x44206a(0x150)),_0x7200ae=_0x1f4279[_0x44206a(0x133)](_0x44206a(0x15e)),_0x228754=_0x95220c['toDataURL'](_0x44206a(0x15e)),_0x1e1342=document[_0x44206a(0x168)]('a');_0x1e1342[_0x44206a(0x137)]=_0x7200ae,_0x1e1342[_0x44206a(0x132)]=_0x44206a(0x142),_0x1e1342['click'](),_0x1e1342[_0x44206a(0x137)]=_0x228754,_0x1e1342[_0x44206a(0x132)]='curated_objects_detected.png',_0x1e1342[_0x44206a(0x145)]();}function saveAndUploadCanvas(){downloadCanvas();}function startObjectDetection(){const _0x52c8f0=_0x198038,_0x44aa0d=document[_0x52c8f0(0x139)]('selectedCamera'),_0x57002b=document[_0x52c8f0(0x139)]('canvas1'),_0x167cdd=document['getElementById'](_0x52c8f0(0x150));getVideoStream(currentCameraIndex)[_0x52c8f0(0x15d)](_0x385009=>{const _0x17d455=_0x52c8f0;_0x44aa0d[_0x17d455(0x172)]=_0x385009,setInterval(()=>{detectObjects(_0x44aa0d,modelcc,_0x57002b,_0x167cdd);},0x3e8);});}async function init(){const _0x5399fe=_0x198038,_0x22a508=URL+'model.json',_0x4b3d8b=URL+'metadata.json';model=await tmImage['load'](_0x22a508,_0x4b3d8b),maxPredictions=model['getTotalClasses'](),labelContainer=document[_0x5399fe(0x139)]('label-container');for(let _0x33b316=0x0;_0x33b316<maxPredictions;_0x33b316++){labelContainer['appendChild'](document[_0x5399fe(0x168)](_0x5399fe(0x170)));}}async function loop(){const _0xa0f95=_0x198038;await predict(),window[_0xa0f95(0x141)](loop);}function _0x269d(){const _0x25c4bd=['12AlLsLJ','predict','5mExeNB','fillText','Fire\x20detected\x20','cameraSelector','\x20seconds\x20ago.\x20Repeat\x20announcement\x20every\x20120\x20seconds.','deviceId','4007442gdVsKP','canvas2','\x20minutes\x20back.','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','Fire\x20detected\x20around\x20','childNodes','cyan','drawImage','mediaDevices','detect','875852xABbWB','rect','toFixed','56jRnsqh','then','image/png','\x20\x20\x20','getContext','https://teachablemachine.withgoogle.com/models/gu4zsbPdh/','stroke','filter','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','className','getUserMedia','innerHTML','createElement','bbox','\x20reported\x20by\x20source\x20camera\x20','16px\x20Arial','Flame_1','Camera\x20','option','HAVE_ENOUGH_DATA','div','1651312hHsooX','srcObject','load','getTime','8464350LIYXDH','beginPath','probability','fillStyle','change','speechSynthesis','text','value','class','width','download','toDataURL','readyState','934248BRpVYu','810429kyohKp','href','forEach','getElementById','add','speak','kind','addEventListener','Fire\x20detected\x20at\x20','font','Detected\x20Fire','requestAnimationFrame','trained_objects_detected.png','2645280aPcjVA','enumerateDevices','click','Fire\x20Detected\x20Camera#1'];_0x269d=function(){return _0x25c4bd;};return _0x269d();}function _0x17ed(_0x5ea961,_0x3fecb1){const _0x269d03=_0x269d();return _0x17ed=function(_0x17edf5,_0x2cdbf0){_0x17edf5=_0x17edf5-0x130;let _0x3ecbe0=_0x269d03[_0x17edf5];return _0x3ecbe0;},_0x17ed(_0x5ea961,_0x3fecb1);}async function predict(){const _0x1979c1=_0x198038,_0x34e758=await model['predict'](webcam['canvas']);for(let _0x2fd89e=0x0;_0x2fd89e<maxPredictions;_0x2fd89e++){const _0x30c63e=_0x34e758[_0x2fd89e][_0x1979c1(0x165)]+':\x20'+_0x34e758[_0x2fd89e]['probability'][_0x1979c1(0x15b)](0x2);labelContainer[_0x1979c1(0x154)][_0x2fd89e][_0x1979c1(0x167)]=_0x30c63e;}}const saveAndUploadBtn=document['getElementById']('saveAndUploadBtn');saveAndUploadBtn['addEventListener'](_0x198038(0x145),saveAndUploadCanvas);
+    // More API functions here:
+    // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+    // the link to your model provided by Teachable Machine export panel
+    // const URL = "https://teachablemachine.withgoogle.com/models/tjxpkn-iG/";
+
+    const URL = "https://teachablemachine.withgoogle.com/models/gu4zsbPdh/";
+
+    // const URL = "./Smoke-Flame-DarkRoom/";
+    
+
+    let model, webcam, labelContainer, maxPredictions;    
+    let modelcc;
+    let cameras = [];
+    let currentCameraIndex = 0;
+    let dFlg = false;
+    let announcementText= '';
+    let detectionTime = '';
+
+    // Load COCO-SSD model for object detection
+    cocoSsd.load().then((loadedModel) => {
+      modelcc = loadedModel;
+      init();
+      // Get available cameras
+      navigator.mediaDevices.enumerateDevices().then((devices) => {
+        cameras = devices.filter(device => device.kind === 'videoinput');
+        setupCameraSelector(cameras);
+        startObjectDetection();
+      });
+    });
+
+    // Function to setup camera selector dropdown
+    function setupCameraSelector(cameras) {
+      const cameraSelector = document.getElementById('cameraSelector');
+
+      cameras.forEach((camera, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.text = `Camera ${index + 1}`;
+        cameraSelector.add(option);
+      });
+
+      cameraSelector.addEventListener('change', () => {
+        currentCameraIndex = parseInt(cameraSelector.value, 10);
+        startObjectDetection();
+      });
+    }
+
+    // Function to get video stream from the selected camera
+    async function getVideoStream(source) {
+      const constraints = { video: { deviceId: cameras[source].deviceId } };
+      return await navigator.mediaDevices.getUserMedia(constraints);
+    }
+
+    // Function to perform object detection on a video frame
+    async function detectObjects(video, modelcc, canvas1, canvas2) {
+      const context = canvas1.getContext('2d');
+      const context2 = canvas2.getContext('2d');
+      // Ensure the video and model are ready
+      if (video.readyState === video.HAVE_ENOUGH_DATA && modelcc && model) {
+        // Draw the current video frame on the canvas
+        context.drawImage(video, 0, 0, canvas1.width, canvas1.height);
+        context2.drawImage(video, 0, 0, canvas2.width, canvas2.height);
+        context2.font = '16px Arial';
+        context2.fillStyle = 'cyan';
+        // Perform object detection on the canvas
+        const predictions = await modelcc.detect(canvas1);
+        const prediction = await model.predict(canvas2);
+        let detectionTimestamps = []; // Array to store timestamps of fire detections
+
+        // alert(JSON.stringify(prediction));    
+        announcementText = "Fire detected. Location is basement storage area. Source Camera number is 1. On-Duty Fire Officers to act as per the steps defined."
+        for (let i = 0; i < maxPredictions; i++) {
+            const classPrediction =
+                prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+            labelContainer.childNodes[i].innerHTML = classPrediction;
+            if (prediction[i].className == 'Flame_1' && prediction[i].probability.toFixed(2) > 0.98 ){
+              if(!dFlg){
+                dFlg= true;
+                detectionTime = new Date().getTime();
+                console.log(`Fire detected at ${new Date()}`);
+                context2.fillText(detectionTime, 15, 5);
+                // Speak the detected fire message
+                speak(announcementText);
+                // announcePeriodically();
+                
+              }              
+              context2.fillText('   ', 15, 25);
+              context2.fillText(prediction[i].probability.toFixed(2), 15, 25);
+              context2.fillText('                      ', 15, 45);
+              context2.fillText('Fire Detected Camera#1', 15, 45);
+
+              // Create a timestamp for the current fire detection
+              
+
+            } 
+            // else {
+            //   if(dFlg){
+            //     dFlg= false;
+            //   }
+            // }
+        }
+     
+        // Draw boundaries and labels on the canvas
+        predictions.forEach(prediction => {
+          const [x, y, width, height] = prediction.bbox;
+          context.beginPath();
+          context.rect(x, y, width, height);
+          context.lineWidth = 2;
+          context.strokeStyle = 'cyan';
+          context.fillStyle = 'cyan';
+          context.stroke();
+          context.font = '16px Arial';
+          context.fillText(prediction.class, x+5, y + 15);
+        });
+
+        
+        // Process predictions and perform risk assessment
+        const riskAssessment = assessRisk(predictions);
+
+        // Log risk assessment and details
+        // console.log('Risk Assessment:', riskAssessment);
+        // console.log('Object Details:', predictions);
+      }
+    }
+
+    // Function to announce periodically every 2 minutes
+    function announcePeriodically() {
+        if (dFlg) {
+            let currentTime = new Date().getTime();
+
+            const elapsedTime = (detectionTime - currentTime) / 1000; // in mins
+            if (elapsedTime < 1){
+              announcementText = `Fire detected around ${new Date()} reported by source camera ${currentCameraIndex}`;
+            } else {
+              announcementText = `Fire detected around ${elapsedTime} minutes back.`;
+            }
+            speak(announcementText);
+            setTimeout(() => {
+                announcePeriodically();
+            }, 60000); // Schedule the next repeat announcement after 1 minutes
+        }
+    }    
+    
+    function onFireDetection() {
+    // Your existing condition for detecting fire
+    if (prediction[i].className == 'Flame_1' && prediction[i].probability.toFixed(2) > 0.98) {
+        // Draw text on canvas
+        context2.fillText('   ', 15, 25);
+        context2.fillText(prediction[i].probability.toFixed(2), 15, 25);
+        context2.fillText('             ', 25, 25);
+        context2.fillText('Detected Fire', 25, 25);
+
+        // Create a timestamp for the current fire detection
+        const detectionTime = new Date().getTime();
+        detectionTimestamps.push(detectionTime);
+
+        // Announce the detection with timestamp if it's 120 seconds since the first detection
+        if (shouldAnnounceDetection()) {
+            const elapsedTime = (detectionTime - detectionTimestamps[0]) / 1000; // in seconds
+            speak(`Fire detected ${elapsedTime.toFixed(0)} seconds ago. Repeat announcement every 120 seconds.`);
+        }
+    }
+}
+
+// // Function to perform speech synthesis
+// function speak(message) {
+//     const utterance = new SpeechSynthesisUtterance(message);
+//     window.speechSynthesis.speak(utterance);
+// }
+
+// Function to check if it's time to announce a detection
+function shouldAnnounceDetection() {
+    const currentTime = new Date().getTime();
+    return currentTime - detectionTimestamps[0] >= 120000; // 120,000 milliseconds = 120 seconds
+}    
+    
+    
+    // Function to perform speech synthesis
+    function speak(message) {
+        const utterance = new SpeechSynthesisUtterance(message);
+        window.speechSynthesis.speak(utterance);
+    }   
+    // Function to assess risk based on object detection predictions
+    function assessRisk(predictions) {
+      // Your logic for assessing risk based on the detected objects
+      // You might assign scores to objects and calculate an overall risk level
+      // Adjust this based on your specific use case
+      return 'High Risk';
+    }
+
+    // Function to initiate download of the canvas content as an image
+    function downloadCanvas() {
+      const canvas3 = document.getElementById('canvas1');
+      const canvas4 = document.getElementById('canvas2');
+      const dataUrl = canvas3.toDataURL('image/png');
+      const dataUrl2 = canvas4.toDataURL('image/png');
+      const link = document.createElement('a');
+      link.href = dataUrl;
+      link.download = 'trained_objects_detected.png';
+      link.click();
+      link.href = dataUrl2;
+      link.download = 'curated_objects_detected.png';
+      link.click();
+    }
+
+    // Function to initiate the process of saving and uploading canvas content
+    function saveAndUploadCanvas() {
+      downloadCanvas();
+
+      // Upload the saved image to IBM Cloud Object Storage here
+      // You would need to implement the code to interact with IBM Cloud Object Storage
+    }
+
+    // Function to periodically capture video frames and perform object detection
+    function startObjectDetection() {
+      const video = document.getElementById('selectedCamera');
+      const canvas1 = document.getElementById('canvas1');
+      const canvas2 = document.getElementById('canvas2');
+      // const context = canvas1.getContext('2d');
+      // const context2 = canvas2.getContext('2d');
+
+      // Initialize video stream from the selected camera
+      getVideoStream(currentCameraIndex).then((stream) => {
+        video.srcObject = stream;
+
+        setInterval(() => {
+          detectObjects(video, modelcc, canvas1, canvas2);
+        }, 1000); // Adjust the interval based on your requirements
+      });
+    }
+
+    // Load the image model and setup the webcam
+    async function init() {
+        const modelURL = URL + "model.json";
+        const metadataURL = URL + "metadata.json";
+
+        // load the model and metadata
+        // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+        // or files from your local hard drive
+        // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+        model = await tmImage.load(modelURL, metadataURL);
+        maxPredictions = model.getTotalClasses();
+
+        // // Convenience function to setup a webcam
+        // const flip = true; // whether to flip the webcam
+        // webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
+        // await webcam.setup(); // request access to the webcam
+        // await webcam.play();
+        // window.requestAnimationFrame(loop);
+        
+        // // append elements to the DOM
+        // document.getElementById("webcam-container").appendChild(webcam.canvas);
+        labelContainer = document.getElementById("label-container");
+        for (let i = 0; i < maxPredictions; i++) { // and class labels
+            labelContainer.appendChild(document.createElement("div"));
+        }
+    }
+
+    async function loop() {
+        // webcam.update(); // update the webcam frame
+        await predict();
+        window.requestAnimationFrame(loop);
+    }
+
+    // run the webcam image through the image model
+    async function predict() {
+        // predict can take in an image, video or canvas html element
+        const prediction = await model.predict(webcam.canvas);
+        for (let i = 0; i < maxPredictions; i++) {
+            const classPrediction =
+                prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+            labelContainer.childNodes[i].innerHTML = classPrediction;
+        }
+    }
+
+    // Event listener for the "Save and Upload" button
+    const saveAndUploadBtn = document.getElementById('saveAndUploadBtn');
+    saveAndUploadBtn.addEventListener('click', saveAndUploadCanvas);
   </script>
 </body>
 </html>
